@@ -1,0 +1,93 @@
+.head_filter_area{
+    width: 100%;
+    padding: 15px 21px;
+    background-color: var(--whiteColor);
+    border-bottom: #d5ddec 1px solid;
+    .tab_area_wrap{
+        li{
+            color: var(--textGrayColorV11);
+            font-family: var(--commonFont);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            padding: 0 10px 12px;
+            margin-right: 20px;
+            cursor: pointer;
+            position: relative;
+            &::after{
+                width: 0%;
+                height: 2px;
+                background-color: var(--darkColorV3);
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                content: "";
+                opacity: 0;
+                transition: all .5s ease-in;
+            }
+            &.active{
+                &::after{
+                   opacity: 1;
+                    width: 100%; 
+                }
+                
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+   
+}
+
+.filter_search_button_area{
+    width: 44px;
+    height: 40px;
+    border-radius: 4px;
+    background: #E6EDF4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 22px;
+}
+
+@media only screen and (max-width:1099px){
+    .table_card_area{
+        .head_filter_area{
+            flex-wrap: wrap;
+            
+            .tab_area_wrap{
+                margin-bottom: 15px;
+            }
+            .right_area_details_wrap{
+                flex: 0 0 100%;
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:750px){
+    .head_filter_area{
+        flex-wrap: wrap;
+        
+        .tab_area_wrap{
+            margin-bottom: 15px;
+            li{
+                font-size: 12px;
+                margin-right: 4px;
+            }
+        }
+        .right_area_details_wrap{
+            flex: 0 0 100%;
+            width: 100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+}

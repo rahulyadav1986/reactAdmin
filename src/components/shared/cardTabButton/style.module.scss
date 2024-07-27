@@ -1,0 +1,42 @@
+li{
+    &.button{
+        height: 38px;
+        padding: 0 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: var(--lightWhiteColor) 1px solid;
+        color: var(--textGrayColorV8);
+        font-family: var(--commonFont);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        cursor: pointer;
+    }
+    &.active{
+        background-color: #e6edf4;
+    }
+    
+}
+
+@media only screen and (max-width:1600px){
+    li{
+        &.button{
+            font-size: 11px;
+            padding: 0 12px;
+        }
+    }
+}
+
+@media only screen and (max-width:750px){
+    li{
+        &.button{
+            flex: 1 0 50%;
+            border-bottom: var(--lightWhiteColor) 1px solid;
+        }
+    }
+}

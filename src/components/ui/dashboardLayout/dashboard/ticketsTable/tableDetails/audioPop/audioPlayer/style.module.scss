@@ -1,0 +1,221 @@
+.audio_player{
+    width: 100%;
+    background: #F9FAFB;
+    padding: 10px;
+    .progress_bar{
+        flex: 0 0 79%;
+        width: 79%;
+        .audio_wrap{
+            width: 100%;
+        }
+        .time{
+            color: var(--darkColorV5);
+            font-family: var(--commonFont);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        audio{
+            margin: 0 5px;
+            width: 97%;
+            height: 32px;
+        }
+    }
+    .control{
+        img{
+            cursor: pointer;
+        }
+        .play_pause_wrap{
+            width: 31px;
+            height: 31px;
+            background-color: #E3E7F1;
+            border-radius: 100%;
+            margin: 0 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            
+        }
+    }
+}
+
+// @media only screen and (max-width: 1500px){
+//     .audio_player{
+//         flex-wrap: wrap;
+//     }
+// }
+
+@media only screen and (max-width: 600px){
+    .audio_player{
+        flex-direction: column;
+        .progress_bar{
+            width: 100%;
+            flex: 0 0 100%;
+        }
+    }
+    
+}
+
+
+.audio_player_supervisor{
+    width: 100%;
+    .top_graph_area{
+        width: 100%;
+        span{
+            color: #191815;
+            font-family: var(--commonFont);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .step{
+            img{
+                margin-right: 15px;
+                cursor: pointer;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+        .graph_wrap{
+            flex:0 0 80%;
+            display: block;
+            position: relative;
+            height: 34px;
+            background-image: url(/assets/dashboard/main_dashboard/tablePops/sound_wave_black.svg);
+            
+            span{
+                width: 0%;
+                height: 100%;
+                background-image: url(/assets/dashboard/main_dashboard/tablePops/sound_wave_red.svg);
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: "";
+            }
+            img{
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+        .graph_area{
+            margin-right: 22px;
+            width: 100%;
+            .graph{
+                width: 100%;
+            }
+            span{
+               &.time{
+                width: 50px;
+                text-align: center;
+               } 
+            }
+        }
+       
+    }
+    .main_audio_bar_area{
+        width: 100%;
+        margin-top: 12px;
+        height: 36px;
+        background-color: var(--textGrayColorV10);
+        display: flex;
+        align-items: center;
+        padding: 0 12px;
+        .audio_player{
+            display: none;
+        }
+        .playpauseIcon{
+            width: 24px;
+            height: 24px;
+            flex: 0 0 24px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background-color: #E3E7F1;
+            border-radius: 100%;
+            
+        }
+        .time{
+            color: #F8F8FA;
+            text-align: right;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        .sliderContainer{
+            flex: 0 0 85%;
+            width: 85%;
+            height: 6px;
+            margin-left: 6px;
+            margin-right: 10px;
+            position: relative;
+            &:hover{
+               .thumb{
+                opacity: 1;
+               } 
+            }
+            &::before{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: #202122;
+                content: "";
+                border-radius: 10px;
+            }
+            .progress_bar{
+                width: 0%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: "";
+                background-color: #F8F8FA;
+                border-radius: 10px;
+            }
+            .thumb{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                height: 14px;
+                width: 14px;
+                background-color: #F8F8FA;
+                border-radius: 100%;
+                margin: auto;
+                opacity: 1;
+                display: none;
+            }
+        }
+        .range{
+            appearance: none;
+            -webkit-appearance: none;
+            flex: 0 0 100%;
+            width: 100%;
+            height: 4px;
+            background-color: #D0E4F1;
+            border-radius: 30px;
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            &::-webkit-slider-thumb{
+                appearance: none;
+                -webkit-appearance: none;
+                height: 4px;
+                width: 14px;
+                background-color: #58B9F0;
+            }
+        }
+    }
+}

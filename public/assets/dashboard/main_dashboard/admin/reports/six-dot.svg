@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="18px" viewBox="0 0 24 18" version="1.1">
+<g id="surface1">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(30.588235%,32.941176%,37.254902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 10 16 C 10 16.598958 9.598958 17 9 17 C 8.401042 17 8 16.598958 8 16 C 8 15.401042 8.401042 15 9 15 C 9.598958 15 10 15.401042 10 16 Z M 10 16 " transform="matrix(0.75,0,0,0.75,0,0)"/>
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(30.588235%,32.941176%,37.254902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 17 16 C 17 16.598958 16.598958 17 16 17 C 15.401042 17 15 16.598958 15 16 C 15 15.401042 15.401042 15 16 15 C 16.598958 15 17 15.401042 17 16 Z M 17 16 " transform="matrix(0.75,0,0,0.75,0,0)"/>
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(30.588235%,32.941176%,37.254902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 24 16 C 24 16.598958 23.598958 17 23 17 C 22.401042 17 22 16.598958 22 16 C 22 15.401042 22.401042 15 23 15 C 23.598958 15 24 15.401042 24 16 Z M 24 16 " transform="matrix(0.75,0,0,0.75,0,0)"/>
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(30.588235%,32.941176%,37.254902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 10 8 C 10 8.598958 9.598958 9 9 9 C 8.401042 9 8 8.598958 8 8 C 8 7.401042 8.401042 7 9 7 C 9.598958 7 10 7.401042 10 8 Z M 10 8 " transform="matrix(0.75,0,0,0.75,0,0)"/>
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(30.588235%,32.941176%,37.254902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 17 8 C 17 8.598958 16.598958 9 16 9 C 15.401042 9 15 8.598958 15 8 C 15 7.401042 15.401042 7 16 7 C 16.598958 7 17 7.401042 17 8 Z M 17 8 " transform="matrix(0.75,0,0,0.75,0,0)"/>
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(30.588235%,32.941176%,37.254902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 24 8 C 24 8.598958 23.598958 9 23 9 C 22.401042 9 22 8.598958 22 8 C 22 7.401042 22.401042 7 23 7 C 23.598958 7 24 7.401042 24 8 Z M 24 8 " transform="matrix(0.75,0,0,0.75,0,0)"/>
+</g>
+</svg>

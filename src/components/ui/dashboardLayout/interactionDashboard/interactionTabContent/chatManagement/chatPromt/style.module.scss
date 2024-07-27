@@ -1,0 +1,88 @@
+.chat_prompt_wrapper{
+    width: 100%;
+    padding: 18px;
+    background-color: var(--lightWhiteColorV2);
+    border-radius: 8px;
+    .ai_recomendation_wrapper{
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid rgba(0, 0, 0, 0.10);
+        background: linear-gradient(90deg, #FFF 18.12%, #F3FFEA 92.86%);
+        padding: 10px;
+        margin-bottom: 14px;
+        position: relative;
+        img{
+            margin-right: 5px;
+            width: 21px;
+        }
+        .ai_heading{
+            color: var(--primaryColor);
+            font-family: var(--commonFont);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.56px;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+        .describe{
+            color: var(--textGrayColorV10);
+            font-family: var(--commonFont);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 22px; 
+            width: 93%;
+            display: block;
+        }
+        .thumb_icon{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30px;
+            height: 40px;
+            height: 85%;
+            padding: 10px 0;
+            justify-content: space-between;
+            img{
+                cursor: pointer;
+                margin-bottom: 15px;
+                width: 16px;
+            }
+        }
+    }
+    .recomendations_wrapper{
+        width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        li{
+            margin-right: 17px;
+            position: relative;
+            cursor: pointer;
+            margin-bottom: 10px;
+            &.ai{
+                color: var(--secondaryColor);
+                font-family: var(--commonFont);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%; /* 21px */
+                img{margin-right: 3px;}
+            }
+            &.bg{
+                padding: 2px 12px;
+                background: var(--lightWhiteColorV2);
+                background-color: var(--whiteColor);
+                border: #e6e6e6 1px solid;
+                border-radius: 20px;
+                color: #000;
+                font-family: var(--commonFont);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%; 
+            }
+        }
+    }
+}

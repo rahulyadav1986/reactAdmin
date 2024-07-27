@@ -1,0 +1,45 @@
+.reach_statistics_details_wrapper{
+    width: 100%;
+    margin-bottom: 40px;
+    .statics_details{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        li{
+            padding: 10px 12px;
+            border-radius: 4px;
+            background-color: var(--whiteColor);
+            width: 100%;
+            img{
+                margin-right: 10px;
+            }
+            h3{
+                color: var(--textGrayColorV11);
+                font-family: var(--headingFont);
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: 0.6px;
+                text-transform: uppercase;
+            }
+            p{
+                color: var(--Text, #3C3E42);
+                font-family: "Plus Jakarta Sans";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 20px; /* 142.857% */
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .reach_statistics_details_wrapper {
+        .statics_details{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.ovarall_dashboard_wrapper{
+    width: 100%;
+    padding: 0 45px;
+    .statistics_grid_area_wrapper{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 42px;
+        .dashboard_main_section{
+            width: 100%;
+            h2{
+                color: var(--primaryColor);
+                font-family: "Plus Jakarta Sans";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 20px; /* 125% */
+                letter-spacing: 1.28px;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+            }
+            .dashboard_section{
+                width: 100%;
+                background-color: var(--offWhiteColorV8);
+                padding: 18px;
+                .card{
+                    width: 100%;
+                    padding: 15px 32px 15px 32px;
+                    border-radius: 8px;
+                    border: 1px solid #C8C8C8;
+                    background: var(--whiteColor);
+                    box-shadow: 0px 1px 2px 0px rgba(31, 41, 55, 0.08);
+                    margin-bottom: 14px;
+                    .head_area{
+                        width: 100%;
+                        margin-bottom: 10px;
+                        h3{
+                            color: var(--ternaryColor);
+                            font-family: var(--headingFont);
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 150%;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1450px){
+    .ovarall_dashboard_wrapper{
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .ovarall_dashboard_wrapper{
+        padding: 0 10px;
+        .statistics_grid_area_wrapper{
+            grid-template-columns: repeat(1, 1fr);
+            display: block;
+        }
+    }
+}

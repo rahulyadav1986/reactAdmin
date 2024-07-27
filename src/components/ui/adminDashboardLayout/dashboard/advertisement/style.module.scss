@@ -1,0 +1,167 @@
+
+.advertisement_wrapper{
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    .advertisement_main_wrapper{
+        width: 777px;
+        position: relative;
+        &::before, &::after{
+            position: absolute;
+            top: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            content: "";
+            opacity: .4;
+            z-index: -1;
+        }
+        &::before{
+            width: 115px;
+            height: 172px;
+            left: -56px;
+            background-image: url(/assets/dashboard/main_dashboard/admin/ornament.png);
+        }
+        &::after{
+            width: 173px;
+            height: 217px;
+            right: -64px;
+            top: -5px;
+            background-image: url(/assets/dashboard/main_dashboard/admin/ornament2.png);
+        }
+        .main_wrap{
+            width: 100%;
+            height: 167px;
+            border-radius: 6px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 20px;
+            position: relative;
+            
+            
+            .cross{
+                position: absolute;
+                top: 11px;
+                right: 11px;
+                cursor: pointer;
+            }
+            video{
+                border-radius: 6px;
+                box-shadow: 0px 0px 250px 0px rgba(75, 65, 140, 0.25);
+                width: 205px;
+                height: 128px;
+                object-fit: cover;
+                margin-right: 52px;
+            }
+            .details_area{
+                h4, p{
+                    color: var(--whiteColor);
+                    font-family: var(--headingFont);
+                    font-style: normal;
+                    line-height: normal;
+                }
+                h4{
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-bottom: 9px;
+                }
+                p{
+                    font-size: 14px;
+                    font-weight: 300;
+                    margin-bottom: 17px;
+                }
+                .button_area{
+                    .button{
+                        width: 231px;
+                        height: 44px;
+                        border-radius: 8px;
+                        border: 1px solid #F9F5FF;
+                        background-color: #F9F5FF;
+                        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+                        color: var(--secondaryColor);
+                        font-family: var(--headingFont);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 24px; /* 150% */
+                        cursor: pointer;
+                        img{
+                            margin-right: 8px;
+                        }
+                        margin-right: 25px;
+                    }
+                    .help{
+                        color: var(--whiteColor);
+                        font-family: var(commonFont);
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 20px; /* 142.857% */
+                        cursor: pointer;
+                        img{
+                            margin-right: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+@media only screen and (max-width:1600px){
+    .advertisement_wrapper{
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+        .advertisement_main_wrapper{
+            width: 711px;
+        }
+    }
+}
+
+@media only screen and (max-width:991px){
+    .advertisement_wrapper{
+        .advertisement_main_wrapper{
+            width: 600px;
+            .main_wrap{
+                flex-direction: column;
+                height: auto;
+                text-align: center;
+                .video{
+                    margin-bottom: 30px;
+                    margin-right: 0;
+                }
+                .button_area{
+                    justify-content: center;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+    
+}
+
+@media only screen and (max-width:620px){
+    .advertisement_wrapper{
+        .advertisement_main_wrapper{
+            width: 350px;
+            .main_wrap{
+                flex-direction: column;
+                height: auto;
+                text-align: center;
+                .video{
+                    margin-bottom: 30px;
+                    margin-right: 0;
+                }
+                .button_area{
+                    justify-content: center;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+    
+}

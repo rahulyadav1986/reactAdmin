@@ -1,0 +1,100 @@
+.action_icon_wrapper{
+    margin-left: 28px;
+    position: relative;
+    z-index: 1;
+    li{
+        margin-right: 37px;
+        position: relative;
+        cursor: pointer;
+        .drop_area{
+            position: absolute;
+            top: calc(100% + 20px);
+            right: -17px;
+        }
+        img{
+            cursor: pointer;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+        .notify{
+            width: 16px;
+            height: 16px;
+            background-color: var(--redColor);
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--whiteColor);
+            font-family: var(--commonFont);
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 500;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+    }
+}
+
+@media only screen and (max-width:1500px){
+    .action_icon_wrapper{
+        margin-left: 20px;
+        li{
+            margin-right: 28px;
+        }
+    }
+}
+@media only screen and (max-width:1260px){
+    .action_icon_wrapper{
+        margin-left: 22px;
+        li{
+            margin-right: 27px;
+        }
+    }
+}
+
+@media only screen and (max-width:1230px){
+    .action_icon_wrapper{
+        margin-left: 16px;
+        li{
+            margin-right: 20px;
+        }
+    }
+}
+@media only screen and (max-width:1130px){
+    .action_icon_wrapper{
+        li{
+           img{
+                width: 20px;
+           }
+        }
+    }
+}
+
+@media only screen and (max-width:991px){
+    .action_icon_wrapper{
+        margin-left: 0;
+        li{
+            margin-right: 30px;
+            .drop_area{
+                right: auto;
+                left: -110px;
+            }
+        }
+        
+    }
+}
+
+@media only screen and (max-width:500px){
+    .action_icon_wrapper{
+        li{
+            margin-right: 15px;
+            .drop_area{
+                left: -160px;
+            }
+        }
+    }
+}
+

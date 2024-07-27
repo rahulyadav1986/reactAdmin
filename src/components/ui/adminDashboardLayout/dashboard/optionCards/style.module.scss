@@ -1,0 +1,110 @@
+.option_card_wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 18px;
+    padding: 40px 0;
+}
+
+.card{
+    width: 100%;
+    min-height: 217px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.05), 0px 12px 16px -4px rgba(16, 24, 40, 0.10);
+    background-color: var(--whiteColor);
+    padding: 25px 5px 25px 22px;
+    border-radius: 6px;
+    position: relative;
+    cursor: pointer;
+    &::before{
+        width: 100%;
+        height: 4px;
+        background-image: url(/assets/dashboard/main_dashboard/admin/designBorder.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        border-radius: 12px 12px 0 0;
+    }
+    .icon{
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 21px;
+    }
+    &:first-child{
+        .icon{
+            background-color: #195FB2;
+        }
+    }
+    &:nth-child(2){
+        .icon{
+            background-color: #19B296;
+        }
+    }
+    &:nth-child(3){
+        .icon{
+            background-color: #9D19B2;
+        }
+    }
+    &:nth-child(4){
+        .icon{
+            background-color: #B29019;
+        }
+        h2{
+            font-family: var(--designFont3);
+            font-weight: 400;
+            color: var(--secondaryColor);
+            span{
+                font-family: var(--designFont2);
+                color:var(--primaryColor)
+            }
+        }
+    }
+    &:nth-child(5){
+        .icon{
+            background-color: #1996B2;
+        }
+    }
+    h2{
+        color: var(--textGrayColorV10);
+        font-family: var(--headingFont);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 17px;
+    }
+    p{
+        color: var(--textGrayColorV10);
+        font-family: var(--headingFont);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 171.429% */
+        opacity: .7;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .option_card_wrapper{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .option_card_wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .option_card_wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

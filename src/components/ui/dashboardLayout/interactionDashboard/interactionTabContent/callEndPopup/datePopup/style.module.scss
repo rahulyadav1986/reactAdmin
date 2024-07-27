@@ -1,0 +1,82 @@
+
+.date_popup_wrapper{
+    width: 370px;
+    border-radius: 4px;
+    background-color: var(--whiteColor);
+    border-radius: 4px;
+    position: absolute;
+    top: calc( 100% + 1px);
+    right: 0;
+    box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.05), 0px 12px 16px -4px rgba(16, 24, 40, 0.1);
+   .time_area{
+    width: 100%;
+    padding-bottom: 20px;
+        select{
+            width: 65px;
+            height: 26px;
+            outline-style: none;
+            border-radius: 6px;
+            border: 1px solid var(--offWhiteColorV15);
+            color: var(--darkColorV9);
+            font-family: var(--commonFont);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px; /* 142.857% */
+            letter-spacing: 0.07px;
+            margin-right: 4px;
+            padding: 0 5px;
+            &:last-child{
+                margin-right: 0;
+            }
+            
+        }
+        span{
+            margin-right: 4px;
+        }
+   }
+   .bottom_area{
+    width: 100%;
+    padding: 20px;
+    .date{
+        color: var(--darkColorV10);
+        font-family: var(--commonFont);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        letter-spacing: 0.07px;
+        margin-right: 10px;
+    }
+    .button_group{
+        button{
+            border-radius: 6px;
+            border: 1px solid var(--offWhiteColorV15);
+            background-color: var(--whiteColor);
+            color: var(--darkColorV9);
+            font-family: var(--commonFont);
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 0.075px;
+            padding: 10px 12px;
+            cursor: pointer;
+            outline-style: none;
+            margin-right: 10px;
+            &:last-child{
+                margin-right: 0;
+                background-color: var(--primaryColor);
+                color: var(--whiteColor);
+            }
+        }
+    }
+   }
+}
+
+
+@media only screen and (max-width: 700px){
+    .date_popup_wrapper{
+        width: 350px;
+    }
+}

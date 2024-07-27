@@ -1,0 +1,244 @@
+.campaign_list_pop_wrapper{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    .ovarlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 9999;
+    }
+    .main_area{
+        width: 734px;
+        padding: 24px;
+        border-radius: 10px;
+        background-color: #F8F8FA;
+        position: relative;
+        z-index: 9999;
+        &.choose_campaign{
+            width: 1084px;
+        }
+        .head{
+            margin-bottom: 12px;
+            width: 100%;
+            h3{
+                color: var(--primaryColor);
+                font-family: var(--headingFont);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 20px;
+                margin-bottom: 0;
+            }
+            .Cross{
+                cursor: pointer;
+            }
+        }
+        .form_area_wrapper{
+            width: 100%;
+            .portion{
+                width: 100%;
+                margin-bottom: 20px;
+                position: relative;
+                label{
+                    color: var(--textGrayColorV8);
+                    font-family: var(--headingFont);
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 20px; /* 142.857% */
+                    margin-bottom: 8px;
+                    display: block;
+                }
+                .form_control{
+                    border-radius: 8px;
+                    border: 1px solid var(--lightWhiteColor);
+                    background: var(--whiteColor);
+                    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+                    width: 100%;
+                    height: 44px;
+                    outline: none;
+                    color: var(--textGrayColorV7);
+                    font-family: var(--headingFont);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; /* 150% */
+                    padding: 0 14px;
+                    &.textarea{
+                        height: 95px;
+                        padding: 14px;
+                        resize: none;
+                    }
+                    &::placeholder{
+                        color: var(--textGrayColorV7);
+                        font-family: var(--headingFont);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px; /* 150% */
+                    }
+                }
+
+                .drop{
+                    width: 100%;
+                    height: 44px;
+                    border: 1px solid var(--lightWhiteColor);
+                    padding: 0 14px;
+                    border-radius: 8px;
+                    position: relative;
+                    cursor: pointer;
+                    background-color: var(--whiteColor);
+                    
+                    span{
+                        color: var(--textGrayColorV10);
+                        font-family: var(--headingFont);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px; /* 150% */
+                        text-transform: capitalize;
+                    }
+                    .caret{                       
+                        width: 16px;
+                        height: 16px; 
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 14px;
+                        margin: auto;
+                        cursor: pointer;
+                    }
+                }
+                .drop_area{
+                    position: absolute;
+                    top: calc(100% + 4px);
+                    left: 0;
+                    width: 241px;
+                    max-height: 230px;
+                    border-radius: 8px;
+                    background-color: var(--whiteColor);
+                    box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.05), 0px 12px 16px -4px rgba(16, 24, 40, 0.1);
+                    overflow: auto;
+                    -ms-overflow-style: none;  /* IE and Edge */
+                    scrollbar-width: none; 
+                    z-index: 99;
+                    &::-webkit-scrollbar{
+                        display: none;
+                    }
+                    li{
+                        color: var(--darkColorV2);
+                        font-family: var(--commonFont);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                        padding: 10px 14px;
+                        cursor: pointer;
+                    }
+                }
+
+                .checkbox_area{
+                    width: 100%;
+                    .check{
+                        margin-right: 68px;
+                        position: relative;
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                        input[type="radio"]{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            opacity: 0;
+                        }
+                        input[type="radio"] + label{
+                            display: flex;
+                            cursor: pointer;
+                            span{
+                                margin-right: 8px;
+                                width: 16px;
+                                height: 16px;
+                                border-radius: 8px;
+                                border: 1px solid var(--lightWhiteColor);
+                                background: var(--whiteColor);
+                                border-radius: 100%;
+                                display: block;
+                                position: relative;
+                                cursor: pointer;
+                                &::before{
+                                    width: 6px;
+                                    height: 6px;
+                                    border-radius: 100%;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    right: 0;
+                                    bottom: 0;
+                                    margin: auto;
+                                    content: "";
+                                    opacity: 0;
+                                    background-color: var(--primaryColor);
+                                }
+                            }
+                        }
+                        input[type="radio"]:checked + label{
+                            span{
+                                border-color: var(--primaryColor);
+                                &::before{
+                                    opacity: 1;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+                
+                
+               
+            }
+
+            
+           
+        }
+        .button{
+            border-radius: 8px;
+            background-color: var(--primaryColor);
+            width: 232px;
+            height: 44px;
+            color: var(--whiteColor);
+            font-family: var(--headingFont);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            cursor: pointer;
+            &.back{
+                width: 105px;
+                border-radius: 8px;
+                border: 1px solid var(--offWhiteColorV8);
+                background: var(--offWhiteColorV8);
+                color: var(--primaryColor);
+                margin-right: 19px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 750px){
+    .campaign_list_pop_wrapper{
+        .main_area{
+            width: 370px;
+        }
+    }
+}
+
+.error_msg{
+    color: red;
+    padding-top: 5px;
+}

@@ -1,0 +1,113 @@
+.interection_center_wrapper_tab_button{
+    padding-left: 14px;
+    li{
+        padding: 0 16px; 
+        cursor: pointer;
+        height: 49px;
+        position: relative;
+        &.active{
+          background-color: var(--whiteColor);
+          border: #e0a5c1 1px solid;
+          border-bottom: none;
+          border-radius: 4px 4px 0 0;
+          padding: 12px 16px;
+          &::after{
+            display: none;
+          } 
+      }
+      .avatar{
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+      }
+      .name_details, .time{
+        color: var(----textGrayColorV10);
+        text-align: right;
+        font-family: var(--headingFont);
+        font-style: normal;
+        line-height: normal;
+      }
+      .live_time{
+        margin-top: 3px;
+      }
+      .name_details{
+        font-size: 14px;
+        font-weight: 500;
+        text-align: left;
+        .live{
+            margin-right: 10px;
+            img{
+              width: 30px;
+              height: 15px;
+            }
+          }
+      }
+      
+      .time{
+        font-size: 12px;
+        font-weight: 600;
+        opacity: .7;
+      }
+      .type_icon{
+        margin-left: 17px;
+      }
+      .icon{
+        margin-left: 13px;
+      }
+      
+    }
+  }
+
+  @media only screen and (max-width: 600px){
+    .interection_center_wrapper_tab_button {
+        overflow: auto;
+        li {
+            flex: 0 0 40%;
+            width: 40%;
+            padding: 0 10px;
+            
+            &:first-child{
+                flex: 0 0 30px;
+            }
+            &.active{
+                padding: 5px 8px;
+                border: #e0a5c1 1px solid;
+                border-bottom: #e0a5c1 1px solid;
+            }
+            .type_icon{
+                margin-left: 5px;
+                img{
+                    width: 16px;
+                }
+            }
+            .icon{
+                margin-left: 5px;
+                img{
+                    width: 16px;
+                }
+            }
+            .name_details{
+                span{
+                    display: none;
+                }
+                .live_time{
+                    display: block;
+                    .live{
+                        display: block;
+                    }
+                    .time{
+                        display: block;
+                        text-align: left;
+                        font-size: 9px;
+                        margin-top: 3px;
+                    }
+                }
+            }
+            .avatar{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+  }
+  

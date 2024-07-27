@@ -1,0 +1,437 @@
+
+
+.status_card_area_wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 18px;
+    .card{
+        width: 100%;
+        border-radius: 8px;
+        background-color: var(--whiteColor);
+        border: 1px solid #C8C8C8;
+        box-shadow: 0px 1px 2px 0px rgba(31, 41, 55, 0.08);
+        padding: 7px 20px;
+        .handled_details{
+            font-family: var(--headingFont);
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            .no_handled{
+                gap: 10px;
+            }
+            strong{
+                color: var(--primaryColor);
+                &.per{
+                    color: var(--subHeadingColor);
+                }
+            }
+
+        }
+        h4{
+            font-family: var(--headingFont);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 21px;
+            text-align: left;
+            letter-spacing: 0;
+            margin: 10px 0 12px;
+
+        }
+        .status_area{
+            width: 166px;
+            .loader_area{
+                width: 100%;
+                span{
+                    height: 9px;
+                    display: block;
+                    border-radius: 10px 0 0 10px;
+                    &:last-child{
+                        border-radius: 0 10px 10px 0;
+                    }
+                    &.automation{
+                        background-color: var(--primaryColor);
+                    }
+                    &.human{
+                        background-color: var(--secondaryColor);
+                    }
+                }
+            }
+            .label_area{
+                margin-top: 3px;
+                h5{
+                    font-family: var(--commonFont);
+                    font-size: 12px;
+                    font-weight: 600;
+                    line-height: 15px;
+                    letter-spacing: 0.05em;
+                    text-align: left;
+                    display: block;
+                }
+            }
+        }
+
+        .bound_details{
+            .outbound_area{
+                .icon{
+                    margin-right: 0;
+                    margin-left: 14px;
+                }
+                .bottom_status{
+                    padding-left: 0;
+                }
+            }
+            .icon{
+                width: 40px;
+                height: 40px;
+                background-color: #CAD0EC;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 14px;
+            }
+            .text_details{
+                h4{
+                   font-size: 16px; 
+                }
+                .stats{
+                    margin-bottom: 10px;
+                    .blue{
+                        color: var(--primaryColor);
+                        font-family: var(--headingFont);
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 25px;
+                        margin-right: 10px;
+                    }
+                    .percentage{
+                        color: #000;
+                        font-family: var(--headingFont);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            
+        }
+        
+        .circle_graph_status{
+            height: 121px;
+            width: 121px;
+        }
+        .right_status{
+            display: block;
+            li{
+                margin-bottom: 5px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                label{
+                    font-family: var(--headingFont);
+                    font-size: 12px;
+                    font-weight: 400;
+                    letter-spacing: 0em;
+                    text-align: right;
+                    margin-right: 8px;
+                    color: #000;
+                    flex: 0 0 110px;
+
+                }
+                .bar_area{
+                    width: 120px;
+                    .smallIcon{
+                        flex: 0 0 25px;
+                    }
+                    .bar{
+                        height: 10px;
+                        border-radius: 0 10px 10px 0;
+                        background: linear-gradient(270deg, #015EB0 5.56%, rgba(1, 71, 176, 0.57) 100%);
+                        margin: 0 6px 0 0;
+                        display: block;
+                        animation: upward 1s forwards;
+                    }
+                    .no{
+                        font-family: var(--headingFont);
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 18px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: #000;
+
+                    }
+                }
+            }
+        }
+        .details{
+            width: 100%;
+            .bottom_status{
+                padding-left: 0;
+            }
+        }
+        .per{
+            h6{
+                font-family: var(--headingFont);
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: var(--subHeadingColor);
+
+
+            }
+            h3{
+                font-family: var(--headingFont);
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 48px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: var(--greenColor);
+                margin-bottom: 6px;
+                span{
+                    font-family: var(--commonFont);
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: var(--subHeadingColor);
+
+                }
+
+            }
+        }
+    }
+}
+
+.bottom_status{
+    color: #3C3E42;
+    font-family: var(--commonFont);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    padding-left: 50px;
+    strong{
+        color: var(--greenColor);
+    }
+}
+
+@keyframes upward{
+    from{
+        width: 0%;
+    }
+    
+}
+
+@-webkit-keyframes upward{
+    from{
+        width: 0%;
+    }
+    
+}
+
+
+
+
+
+.list_status_wrapper{
+    gap: 18px;
+    margin-top: 28px;
+    li{
+        flex: 1 0 auto;
+        min-height: 93px;
+        border-radius: 4px;
+        padding: 20px;
+        
+        
+        h3{
+            font-family: var(--headingFont);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 18px;
+            letter-spacing: 0.05em;
+            color: var(--textGrayColorV11);
+            text-transform: uppercase;
+            margin-bottom: 12px;
+
+
+        }
+        .time{
+            font-family: var(--headingFont);
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: var(--primaryColor);
+            margin-right: 10px;
+
+
+        }
+        .rate{
+            .time{
+                font-size: 16px;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:1500px){
+    .status_card_area_wrapper{
+        .card{
+            h4{
+                font-size: 11px;
+            }
+            .status_area{
+                width: 138px;
+            }
+            .bound_details{
+                .icon{
+                    width: 35px;
+                    height: 35px;
+                    margin-right: 8px;
+                }
+                .text_details{
+                    h4{
+                        font-size: 13px;
+                    }
+                    .stats{
+                       .blue{
+                         font-size: 25px;
+                       } 
+                       .percentage{
+                            font-size: 14px;
+                       }
+                    }
+                }
+                .outbound_area{
+                    .icon{
+                        margin-left: 8px;
+                    }
+                }
+            }
+            .right_status{
+                li{
+                    label{
+                        flex: 0 0 102px;
+                    }
+                }
+            }
+            
+            .per{
+                h3{
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+
+    .bottom_status{
+        padding-left: 0;
+        font-size: 14px;
+    }
+
+    .list_status_wrapper{
+        li{
+            h3{
+                font-size: 12px;
+            }
+            .time{
+                font-size: 14px;
+            }
+            .rate{
+                font-size: 14px;
+                .time{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:1300px){
+    .status_card_area_wrapper{
+        gap: 7px;
+    }
+    .list_status_wrapper{
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        li{
+            flex: 1 0 20%;
+        }
+    }
+}
+
+@media only screen and (max-width:1200px){    
+    .list_status_wrapper{
+        flex-wrap: wrap;
+        
+        li{
+            flex: 1 0 20%;
+        }
+    }
+}
+
+@media only screen and (max-width:991px){    
+    .status_card_area_wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        .card{
+            flex-wrap: wrap;
+            .right_status{
+                width: 100%;
+                li{
+                    .bar_area{
+                        width: 100%;
+                    }
+                }
+            }
+            .status_area{
+                width: 100%;
+            }
+            .handled_details{
+                width: 100%;
+            }
+            .bound_details{
+                flex-wrap: wrap;
+                .outbound_area{
+                    margin-bottom: 20px;
+                }
+                
+            }
+        }
+    }
+    .list_status_wrapper{
+        .time_wrap{
+            flex-wrap: wrap;
+            .time{
+                flex-wrap: wrap;
+            }
+            .rate{
+                flex-wrap: wrap;
+                > div{
+                    flex: 0 0 100%;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+                
+            
+
+        

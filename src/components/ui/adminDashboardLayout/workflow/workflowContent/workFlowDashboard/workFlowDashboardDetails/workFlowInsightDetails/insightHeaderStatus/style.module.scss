@@ -1,0 +1,184 @@
+.workflow_insight_status_wrap{
+    width: 100%;
+    padding: 23px 27px;
+    border-radius: 8px;
+    border: 1px solid #E5F1FE;
+    background: var(--whiteColor);
+    box-shadow: 0px 2px 4px -2px rgba(16, 24, 40, 0.06), 0px 4px 8px -2px rgba(16, 24, 40, 0.10);
+    margin-bottom: 13px;
+    li{
+        margin-right: 64px;
+        &:last-child{
+            margin-right: 0;
+        }
+        img{
+            margin-right: 9px;
+        }
+        .label{
+            color: #000;
+            font-family: var(--headingFont);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 3px;
+        }
+        .no{
+            color: var(--secondaryColor);
+            font-family: var(--headingFont);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+}
+
+.platform_insight_status_wrap{
+    width: 100%;
+    padding: 28px 38px;
+    border-radius: 8px;
+    border: 1px solid #E5F1FE;
+    background: var(--whiteColor);
+    box-shadow: 0px 2px 4px -2px rgba(16, 24, 40, 0.06), 0px 4px 8px -2px rgba(16, 24, 40, 0.10);
+    margin-bottom: 13px;
+    li{
+        margin-right: 116px;
+        &:last-child{
+            margin-right: 0;
+        }
+        h4{
+            color: var(--textGrayColorV10);
+            font-family: var(--headingFont);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 11px;
+            opacity: 0.6;
+        }
+        span{
+            color: var(--textGrayColorV10);
+            font-family: var(--headingFont);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-right: 34px;
+            &:last-child{
+                margin-right: 0;
+            }
+            strong{
+                color: var(--secondaryColor);
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1500px){
+    .workflow_insight_status_wrap{
+        li{
+            margin-right: 30px;
+        }
+    }
+    .platform_insight_status_wrap{
+        li{
+            margin-right: 30px;
+            span{
+                font-size: 13px;
+            }
+            h4{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    .workflow_insight_status_wrap{
+        li{
+            margin-right: 25px;
+            .label{
+                font-size: 10px;
+            }
+            .no{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .workflow_insight_status_wrap{
+        flex-wrap: wrap;
+        padding: 0;
+        li{
+            margin-right: 0;
+            margin-bottom: 0;
+            flex: 0 0 25%;
+            padding: 10px;
+            .label{
+                font-size: 10px;
+            }
+            .no{
+                font-size: 15px;
+            }
+        }
+    }
+
+    .platform_insight_status_wrap{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+        padding-bottom: 0;
+        li{
+            margin-right: 0;
+            flex: 0 0 50%;
+            margin-bottom: 20px;
+            span{
+                font-size: 13px;
+            }
+            h4{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .workflow_insight_status_wrap{
+        flex-wrap: wrap;
+        padding: 0;
+        li{
+            margin-right: 0;
+            margin-bottom: 0;
+            flex: 0 0 100%;
+            padding: 10px;
+            .label{
+                font-size: 10px;
+            }
+            .no{
+                font-size: 15px;
+            }
+        }
+    }
+
+    .platform_insight_status_wrap{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+        padding-bottom: 0;
+        li{
+            margin-right: 0;
+            flex: 0 0 100%;
+            margin-bottom: 20px;
+            span{
+                font-size: 13px;
+            }
+            h4{
+                font-size: 14px;
+            }
+        }
+    }
+}

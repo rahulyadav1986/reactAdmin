@@ -1,0 +1,121 @@
+.leaderboard_wrapper{
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #EDE0CF;
+    background-color: #FBF5ED;
+    padding: 10px 16px;
+    min-height: 386px;
+    h2{
+        color: var(--subHeadingColor);
+        font-family: var(--commonFont);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; 
+        margin-bottom: 10px;
+    }
+    .leader_top_list, .others_leader_list{
+        width: 288px;
+        margin: 0 auto;
+        li{
+            img{
+                width: 24px;
+                height: 24px;
+                border-radius: 100%;
+            }
+            .name, .points{
+                color: var(--textGrayColorV10);
+                font-family: var(--headingFont);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                letter-spacing: 0.14px;
+                text-transform: capitalize;
+                margin-bottom: 4px;
+            }
+            .points{
+                font-size: 12px;
+                font-weight: 600;
+                margin-bottom: 6px;
+            }
+            .rank{
+                flex: 0 0 96px;
+                width: 96px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px 10px 0 0;
+                color: var(--whiteColor);
+                font-family: var(--headingFont);
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: capitalize;
+            }
+            &:first-child{
+                .rank{
+                    background-color: #578BB9;
+                    height: 36px;
+                }
+            }
+            &:nth-child(2){
+                .rank{
+                    background-color: var(--primaryColor);
+                    height: 44px;
+                }
+            }
+            &:last-child{
+                .rank{
+                    background-color: var(--buttonColor);
+                    height: 27px;
+                }
+            }
+        }
+        
+    }
+    .others_leader_list{
+        margin-top: 8px;
+        li{
+            margin-bottom: 9px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            .caret_status{
+                color: #000;
+                font-family: var(--headingFont);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                .caret_direction{
+                    width: 16px;
+                    height: 12px;
+                    background-color: rgba(34, 204, 19, 1);
+                    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+                }
+            }
+           .name_area{
+                justify-content: flex-start;
+                flex: 0 0 72%;
+                width: 72px;
+                img{
+                    width: 25px;
+                    height: 25px;
+                    margin-right: 9px;
+                }
+           }
+           .points{
+            color: #000;
+            font-family: var(--headingFont);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 0;
+           }
+        }
+    }
+}

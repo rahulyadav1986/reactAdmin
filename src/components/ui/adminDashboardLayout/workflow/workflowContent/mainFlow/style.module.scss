@@ -1,0 +1,45 @@
+.main_flow_wrapper{
+    padding: 0 18px;
+    position: relative;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 180px);
+    .flow_area_wrapper{
+        width: 100%;
+        height: calc(100vh - 180px);
+        position: absolute;
+        .start_wrapper{
+            position: absolute;
+            top: calc(48px + 97px + 58px);
+            left: 97px;
+            z-index: 99;
+        }
+        .start_flow{
+            cursor: pointer;
+            margin-right: 30px;
+            height: 102px;
+            display: flex;
+            align-items: center;
+            
+        }
+    }
+}
+.handle_cusrsor{
+    cursor: pointer;
+}
+.react_flow_container{
+    //width: calc(100% - 532px);
+    width: 100%;
+    height: 100%;
+}
+.settings_open{
+    width: calc(100% - 532px);
+}
+
+@media only screen and (max-width:1300px){
+    .settings_open{
+        width: calc(100% - 435px);
+    }
+}

@@ -1,0 +1,202 @@
+.live_workflow_report_wrapper{
+    width: 100%;
+    .card{
+        width: 100%;
+        border-radius: 8px;
+        background-color: var(--whiteColor);
+        box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.05), 0px 12px 16px -4px rgba(16, 24, 40, 0.05);
+        padding: 12px;
+        margin-bottom: 15px;
+        .status_header{
+            padding: 24px;
+            h2{
+                color: var(--subHeadingColor);
+                font-family: var(--headingFont);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 150%; /* 24px */
+            }
+        }
+        .table_area_wrapper{
+            width: 100%;
+            height: auto;
+            overflow: auto;
+            .checkbox{
+                position: relative;
+                input[type="checkbox"]{
+                    opacity: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                    z-index: 9;
+                }
+                input[type="checkbox"] + label span{
+                    width: 20px;
+                    height: 20px;
+                    border: #8B83BA 2px solid;
+                    border-radius: 3px;
+                    display: block;
+                    position: relative;
+                    &::before{
+                        width: 20px;
+                        height: 20px;
+                        background-image: url(/assets//dashboard//main_dashboard/check.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: 70%;
+                        position: absolute;
+                        top: -2px;
+                        left: -2px;
+                        margin: auto;
+                        content: "";
+                        filter: brightness(0) invert(1);
+                        display: none;
+                    }
+                    
+                }
+                input[type="checkbox"]:checked + label span{
+                    background-color: var(--primaryColor);
+                    border-color: var(--primaryColor);
+                    &::before{
+                        display: block;
+                    }
+            
+                    
+                }
+            }
+            thead{
+                tr{
+                    width: 100%;
+                    background-color: #F2F3FF;
+                    border-bottom: none;
+                    th{
+                        padding: 15px 20px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap !important;
+                        text-align: left;
+                        font-weight: normal;
+                        color: var(--textGrayColorV11);
+                        font-family: var(--headingFont);
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        letter-spacing: 0.6px;
+                        text-transform: uppercase;
+                        &.check{
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    td{
+                        padding: 15px 20px; 
+                        color: var(--darkColorV3);
+                        font-family: var(--headingFont);
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        text-transform: none;
+                        .graph{
+                            margin-left: 30px;
+                        }
+                        &.workflow{
+                            strong{
+                                color: var(--darkColorV3);
+                                font-family: var(--commonFont);
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                                display: block;
+                                margin-bottom: 6px;
+                            }
+                            span{
+                                color: #6E6893;
+                                font-family: var(--commonFont);
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                letter-spacing: 0.7px;
+                            }
+                        }
+                        
+                        span{
+                            color: var(--textGrayColorV11);
+                            font-family: var(--commonFont);
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            display: block;
+                            &.type{
+                                width: auto;
+                                padding: 5px 10px;
+                                border-radius: 4px;
+                                background-color: var(--offWhiteColorV8);
+                                color: var(--primaryColor);
+                                font-family: var(--headingFont);
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                                letter-spacing: 1.44px;
+                                margin-bottom: 6px;
+                                display: inline-block;
+                            }
+                            &.success_rate, &.error_rate, &.response_time, &.customer_satisfaction{
+                                font-size: 14px;
+                                font-weight: 600;
+                                margin-bottom: 6px;
+                            }
+                            &.success_rate{
+                                color: #008344;
+                            }
+                            &.error_rate{
+                                color: #EF0404;
+                            }
+                            &.response_time{
+                                color: #4E545F;
+                            }
+                            &.customer_satisfaction{
+                                color: #008344;
+                                text-transform: uppercase;
+                            }
+                        }
+                        .action_icons{
+                            span{
+                                margin-right: 30px;
+                                cursor: pointer;
+                                &:last-child{
+                                    margin-right: 0;
+                                }
+                            }
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:991px){
+    .live_workflow_report_wrappe {
+        .card {
+            .table_area_wrapper{
+                table{
+                    width: 1200px;
+                    max-width: 1200px;
+                }
+            }
+        }
+    }
+}

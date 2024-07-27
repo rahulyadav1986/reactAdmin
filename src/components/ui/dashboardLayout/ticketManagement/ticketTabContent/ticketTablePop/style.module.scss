@@ -1,0 +1,77 @@
+.ticket_table_pop_wrap{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    // background-color: rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    .ticket_details_main_wrap{
+        width: 422px;
+        height: calc(100% - 64px);
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px 24px;
+        background-color: var(--whiteColor);
+        overflow: auto;
+        z-index: 9999;
+        .head{
+            width: 100%;
+            margin-bottom: 24px;
+            h4{
+                color: #000;
+                font-family: var(--commonFont);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            img{
+                cursor: pointer;
+            }
+        }
+        .list_portion{
+            width: 100%;
+            li{
+                width: 100%;
+                margin-bottom: 24px;
+                label{
+                    color: var(--subHeadingColorV2);
+                    font-family: var(--commonFont);
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+                p{
+                    color: var(--textGrayColorV10);
+                    font-family: var(--commonFont);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 28px; 
+                    span{
+                        color: #058DDA;
+                    }
+                    &.priority{
+                        &.high{
+                            color: var(--redColor);
+                        }
+                        &.midium{
+                            color: var(--yellowColor);
+                        }
+                        &.low{
+                            color: var(--greenColor);
+                        }
+                        
+                    }
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,159 @@
+.sidebar_area{
+    width: 270px;
+    flex: 0 0 270px;
+    height: calc(100vh - 64px - 64px);
+    background-color: #f8f8fa;
+    overflow: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; 
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    .menu_area{
+        width: 100%;
+        li{
+            flex-wrap: wrap;
+            border-bottom: rgba(0, 0, 0, 0.10) 1px solid;
+            .add{
+                cursor: pointer;
+            }
+            &:last-child{
+                border-bottom: none;
+            }
+            span{
+                &.menu_catName{
+                    color: var(--subHeadingColorV2);
+                    font-family: var(--commonFont);
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    letter-spacing: 0.48px;
+                    text-transform: uppercase;
+                    padding: 13px 12px;
+                    
+                    
+                }
+            }
+            &.noMargin{
+                margin-top: 0 !important;
+            }
+            &.subCateName{
+                padding: 0;
+                margin-top: 0;
+                
+                span{
+                    &.subMenuName{
+                        color: var(--secondaryColor);
+                        font-family: var(--commonFont);
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        letter-spacing: 0.48px;
+                        text-transform: uppercase;
+                        padding: 8px 12px;
+                        &:first-child{
+                            padding-right: 0;
+                        }
+                        &:nth-child(2){
+                            padding-left: 0;
+                        }
+                    }
+                    &.rotate{
+                        img{
+                            transform: rotate(90deg);
+                        }
+                    }
+                }
+                .downArrow{
+                    margin-right: 5px;
+                }
+                ul{
+                    margin-top: 5px;
+                }
+            }
+            
+            &.submenu{
+                padding: 10px 12px;
+                img{
+                    margin-right: 5px;
+                }
+
+            }
+            .subMenuWrapper{
+                overflow: hidden;
+                transition: all .35s ease;
+                height: auto;
+                li{
+                    font-weight: 600;
+                    color: #4E545F;
+                    &.active{
+                        background-color: #dadde5;
+                        color: var(--primaryColor);
+                        
+                        .time{
+                            margin-left: 12px;
+                        }
+                    }
+                }
+                
+            }
+            .close{
+                height: 0;
+                overflow: hidden;
+                
+            }
+            
+            ul{
+                flex: 0 0 100%;
+                
+            }
+            ul > li{
+                border-bottom: none;
+            }
+            .no_label{
+                flex: 0 0 100%;
+                text-transform: capitalize;
+                color: var(--textGrayColorV10);
+                font-family: var(--headingFont);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                opacity: 0.8;
+                padding: 0 12px 13px;
+            }
+            
+        }
+    }
+}
+
+@media only screen and (max-width:1500px){
+    .sidebar_area {
+        width: 227px;
+        flex: 0 0 227px;
+        .menu_area {
+            li {
+                .subMenuWrapper {
+                    li{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .sidebar_area{
+        position: absolute;
+        top: 0;
+        left: -1000%;
+        z-index: 999;
+        box-shadow: rgba(0,0,0,.1) 1px 0 10px;
+        &.open{
+            left: 0;
+        }
+    }
+}

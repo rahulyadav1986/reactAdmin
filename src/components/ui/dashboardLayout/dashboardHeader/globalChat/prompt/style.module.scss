@@ -1,0 +1,52 @@
+.prompt_area_wrap{
+    width: 100%;
+    height: auto;
+    padding: 0 18px 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    .main_area{
+        width: 100%;
+        border-radius: 30px;
+        background: var(--whiteColor);
+        box-shadow: 5px 4px 20px 0px rgba(0, 0, 0, 0.13);
+        height: 56px;
+        padding-right: 110px;
+        padding-left: 22px;
+        position: relative;
+        .action_icons{
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            margin-right: 24px;
+            span{
+                margin-right: 15px;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+        .form_control{
+            width: 100%;
+            height: 56px;
+            background: var(--whiteColor);
+            border: none;
+            outline-style: none;
+            color: #333;
+            font-family: var(--commonFont);
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            &::placeholder{
+                color: #A1A1A1;
+                font-family: var(--commonFont);
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+    }
+}

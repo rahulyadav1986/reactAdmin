@@ -1,0 +1,50 @@
+.logos_area_wrapper{
+    .main_logo{
+        color: var(--textGrayColorV10);
+        font-family: var(--commonFont);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; 
+        letter-spacing: 0.48px;
+        text-transform: uppercase;
+        margin-left: 13px;
+    }
+}
+
+@media only screen and (max-width:1130px){
+    .logos_area_wrapper{
+        .main_logo{
+            font-size: 10px;
+            img{
+                width: 48px;
+            }
+        }
+        span{
+            img{
+                width: 107px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:500px){
+    .logos_area_wrapper {
+        flex-direction: column;
+        span {
+            img{
+                width: 59px;
+            }
+        }
+        .main_logo{
+            font-size: 7px;
+            margin-left: 0;
+            line-height: 11px;
+            img{
+                width: 32px;
+            }
+        }
+    }
+}
+

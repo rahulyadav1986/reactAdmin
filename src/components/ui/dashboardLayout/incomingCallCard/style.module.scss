@@ -1,0 +1,255 @@
+.incomingCallcard_wrapper{
+    width: 442px;
+    height: auto;
+    position: absolute;
+    top: 64px;
+    right: 20px;
+    z-index: 9;
+    background-image: url(../../../../../public/assets/dashboard/incomingCallCard/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    padding: 12px 48px 30px;
+    .time_count{
+        position: absolute;
+        top: 16px;
+        right: 24px;
+        color: #ACBEE2;
+        font-family: var(--commonFont);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .profile_area{
+        width: 100%;
+        margin-bottom: 33px;
+        .image_avatar{
+            width: 137px;
+            height: 137px;
+            border-radius: 100%;
+        }
+    }
+    .incoming_button{
+        padding: 4px 12px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        background-color: #EFE1E1;
+        color: var(--secondaryColor);
+        font-family: var(--commonFont);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        position: relative;
+        top: -20px;
+    }
+    h2, .no{
+        color: var(--whiteColor);
+        font-family: var(--commonFont);
+        font-style: normal;
+        line-height: normal;
+    }
+    h2{
+        margin-top: -3px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-bottom: 8px; 
+    }
+    .no{
+        font-size: 14px;
+        font-weight: 500;
+        opacity: .7;
+    }
+    .option_area_wrapper{
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 33px;
+        li{
+            display: flex;
+            flex-direction: column;
+            
+            .heading{
+                color: var(--whiteColor);
+                font-family: var(--commonFont);
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: 0.72px;
+                text-transform: uppercase;
+                opacity: 0.5;
+                margin-bottom: 12px;
+            }
+            .label{
+                color: var(--whiteColor);
+                font-family: var(--commonFont);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                opacity: 0.7;
+            }
+            .status{
+                color: #99FFCE;
+                font-family: var(--commonFont);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                img{
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+    .button_area{
+        width: 100%;
+        padding: 0 12px;
+        .button{
+            padding: 8px 12px;
+            border-radius: 2px;
+            border: 1px solid rgba(255, 255, 255, 0.50);
+            color: rgba(255, 255, 255, 0.50);
+            text-align: center;
+            font-family: var(--commonFont);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            &.accept{
+                background-color: #1D9D08;
+                border-color: transparent;
+                z-index: 1;
+                &::after{
+                    width: calc(100%);
+                    height: calc(100%);
+                    position: absolute;
+                    right: 0;
+                    left: 0;
+                    margin: auto;
+                    content: "";
+                    background-color: var(--primaryColor);
+                    z-index: -1;
+                    animation: acceptButton 2s infinite both;
+                    border-radius: 100%;
+                }
+                .label{
+                    color: var(--whiteColor);
+                    margin-right: 20px;
+                }
+            }
+            img{
+                margin-right: 8px;
+            }
+            .label{
+                margin-right: 10px;
+            }
+            .tag{
+                border-radius: 2px;
+                
+                width: 19px;
+                height: 17px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: var(--commonFont);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                background-color: rgba(234, 234, 234, 0.50);
+                &.d{
+                    color:  #4E545F;                    
+                }
+                &.a{
+                    color: var(--whiteColor);
+                }
+            }
+        }
+    }
+}
+
+@keyframes acceptButton{
+    from{
+        width: calc(0);
+        transform: scale(.2);
+        opacity: 0;
+        filter: blur(5);
+    }
+    to{
+        width: calc(100%);
+        transform: scale(2);
+        transform-origin: center center;
+        opacity: 1;
+        filter: blur(5);
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .incomingCallcard_wrapper{
+        width: 300px;
+        left: 0;
+        right: 0;
+        top: 20px;
+        margin: auto;
+        padding: 20px;
+        .option_area_wrapper{
+            margin-bottom: 15px;
+        }
+        .button_area{
+            flex-direction: column;
+            .button{
+                width: 150px;
+                margin-bottom: 10px;
+                font-size: 14px;
+                justify-content: space-between;
+            }
+        }
+        .time_count{
+            font-size: 12px;
+            right: 16px;
+        }
+        .profile_area{
+            .image_avatar{
+                width: 80px;
+                height: 80px;
+            }
+        }
+        .incoming_button{
+            padding: 4px 5px;
+            font-size: 10px;
+        }
+        h2{
+            font-size: 18px;
+        }
+        .no{
+            font-size: 12px;
+        }
+        .option_area_wrapper{
+            flex-direction: column;
+            li{
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 10px;
+                .heading{
+                    margin-bottom: 0;
+                    font-size: 11px;
+                }
+                .label{
+                    font-size: 11px;
+                }
+                .status{
+                    font-size: 11px;
+                }
+            }
+        }
+        
+    }
+}

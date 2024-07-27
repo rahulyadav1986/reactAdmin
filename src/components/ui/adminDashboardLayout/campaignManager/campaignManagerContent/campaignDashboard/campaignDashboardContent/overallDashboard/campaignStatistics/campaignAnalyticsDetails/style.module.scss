@@ -1,0 +1,48 @@
+.campaign_analytics_details_wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 40px;
+    .statics_details{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+        li{
+            padding: 10px 12px;
+            border-radius: 4px;
+            background-color: var(--whiteColor);
+            flex: 1 0 auto;
+            img{
+                margin-right: 10px;
+            }
+            h3{
+                color: var(--textGrayColorV11);
+                font-family: var(--headingFont);
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: 0.6px;
+                text-transform: uppercase;
+            }
+            p{
+                color: var(--Text, #3C3E42);
+                font-family: "Plus Jakarta Sans";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 20px; /* 142.857% */
+            }
+        }
+    }
+    .graph_area{
+        width: 100%;
+        height: 130px;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .campaign_analytics_details_wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

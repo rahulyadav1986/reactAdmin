@@ -1,0 +1,115 @@
+.chat_table_wrapper{
+    width: 100%;
+    overflow: auto;
+    table{
+        width: 100%;
+        max-width: 100%;
+        border-collapse: collapse;
+        thead{
+            tr{                
+                border-bottom: #D5DEEC 1px solid;
+                th{
+                    color: var(--subHeadingColorV2);
+                    font-family: var(--commonFont);
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    padding: 10px 0 10px;
+                    text-align: left;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        tbody{
+            tr{
+                border-bottom: #D5DEEC 1px solid;
+                &:last-child{
+                    border-bottom: none;
+                }
+                td{
+                    padding: 10px 0;
+                    
+                    text-align: left;
+                    .profile_area{
+                        width: 100%;
+                        padding: 8px 13px;
+                        .name, .contact{
+                            font-family: var(--commonFont);
+                            font-style: normal;
+                            line-height: normal;
+                            text-transform: none;
+                        }
+                        .name{
+                            color: var(--textGrayColorV10);
+                            font-size: 14px;
+                            font-weight: 500;
+                            margin-bottom: 8px;
+                        }
+                        
+                        .contact{
+                            color: var(--offWhiteColorV9);
+                            font-size: 13px;
+                            font-weight: 400;
+                            opacity: .8;
+                        }
+                        img{
+                            width: 37px;
+                            height: 37px;
+                            border-radius: 100%;
+                            margin-right: 12px;
+                        }
+                    }
+                    .type_area{
+                        img{
+                            margin-right: 5px;
+                            width: 18px;
+                            height: 18px;
+                            border-radius: 100%;
+                        }
+                        span{
+                            color: #000;
+                            font-family: var(--commonFont);
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            text-transform: none;
+                            strong{
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                    .time{
+                        color: var(--textGrayColorV10);
+                        font-family: var(--commonFont);
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        text-transform:none;
+                    }
+                    .action{
+                        width: 100%;
+                        img{
+                            margin-right: 26px;
+                            cursor: pointer;
+                            &:last-child{
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .chat_table_wrapper{
+        table{
+            width: 700px;
+            max-width: 700px;
+        }
+    }
+}

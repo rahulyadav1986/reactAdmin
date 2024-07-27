@@ -1,0 +1,278 @@
+.form_area{
+    width: 432px;
+    flex: 0 0 432px;
+    position: relative;
+    z-index: 99;
+    .heading_area{
+        width: 100%;
+        padding: 0 28px;
+        .main_heading_area{
+            border-radius: 6px;
+            border: 1px solid var(--whiteColor);
+            background: var(--secondaryColor);
+            padding: 10px 10px 14px 15px;
+            &.superAdmin{
+                background-color: var(--primaryColor);
+            }
+            &.resellerAdmin{
+                background-color: #C2F0FF;
+                h3{
+                    color: #2B2175;
+                }
+            }
+            img{
+                margin-right: 5px;
+            }
+            h3{
+                color: var(--whiteColor);
+                font-family: var(--headingFont);
+                font-size: 21px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 2.1px;
+            }
+        }
+        
+    }
+    .main_form_area{
+        width: 100%;
+        border-radius: 10px;
+        background-color: var(--whiteColor);
+        box-shadow: 0px 4px 32px 0px rgba(158, 147, 147, 0.15), 0px 0px 42px 0px rgba(0, 0, 0, 0.10);
+        padding: 20px;
+        margin-top: -4px;
+        h1{
+            color: var(--darkColorV2);
+            font-family: var(--headingFont);
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 44px;
+            letter-spacing: -0.72px;
+            margin-bottom: 12px;
+            background-color: transparent;
+            padding: 0;
+        }
+        p{
+            color: var(--textGrayColorV7);
+            font-family: var(--headingFont);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            margin-bottom: 32px;
+        }
+    }
+    form{
+        width: 100%;
+        .portion{
+            width: 100%;
+            margin-bottom: 16px;
+            position: relative;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            label{
+                color: var(--textGrayColorV8);
+                font-family: var(--headingFont);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px;
+                margin-bottom: 6px;
+                display: block;
+            }
+            .form_control{
+                width: 100%;
+                height: 44px;
+                border-radius: 8px;
+                border: 1px solid var(--lightWhiteColor);
+                background-color: var(--whiteColor);
+                box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+                outline-style: none;
+                padding: 0 14px;
+                position: relative;
+                &::placeholder{
+                    color: var(--textGrayColorV7);
+                    font-family: var(--headingFont);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+            .error_message{
+                position: absolute;
+                bottom: -14px;
+                left: 0;
+                color: red;
+                font-style: italic;
+                font-size: 12px;
+            }
+            .check{
+                
+                position: relative;
+                cursor: pointer;
+                
+                input{
+                    opacity: 0;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                input[type="checkbox"] + label{
+                    color: var(--textGrayColorV8);
+                    font-family: var(--headingFont);
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 20px;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    span{
+                        width: 16px;
+                        flex: 0 0 16px;
+                        height: 16px;
+                        border-radius: 4px;
+                        border: 1px solid var(--lightWhiteColor);
+                        background: var(--whiteColor);
+                        margin-right: 8px;
+                        cursor: pointer;
+                    }
+                } 
+                input[type="checkbox"]:checked + label span{
+                    background-color: var(--primaryColor);
+                    position: relative;
+                    border-color: var(--primaryColor);
+                    &::before{
+                        width: 100%;
+                        height: 100%;
+                        background-image: url(../../../../assets/signin/check.svg);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        content: "";
+                        background-size: 60%;
+                        filter: brightness(0) invert(1);
+
+                    }
+                }
+                
+            }
+            a{
+                color: var(--primaryColor);
+                font-family: var(--headingFont);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px;
+                display: inline-block;
+                padding-left: 10px;
+            }
+            .button{
+                width: 100%;
+                height: 44px;
+                border-radius: 8px;
+                border: 1px solid var(--primaryColor);
+                background: var(--primaryColor);
+                box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+                outline-style: none;
+                cursor: pointer;
+                color: var(--whiteColor);
+                font-family: var(--headingFont);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+                &.superAdmin{
+                    background-color: var(--secondaryColor);
+                    border-color: var(--secondaryColor);
+                }
+            }
+            &.account{
+                color: var(--textGrayColorV7);
+                font-family: var(--headingFont);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; /* 142.857% */
+                margin-bottom: 0;
+                margin-top: 30px;
+            }
+            
+        }
+    }
+}
+
+@media only screen and (max-width:1500px){
+    .form_area{
+        .main_form_area{
+            h1{
+                font-size: 30px;
+                margin-bottom: 4px;
+            }
+            p{
+                margin-bottom: 20px;
+            }
+            form{
+                .portion{
+                    &.account{
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:991px){
+    .form_area{
+        order: 1;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .form_area{
+        width: 100%;
+        flex: 0 0 100%;
+        .heading_area{
+            .main_heading_area{
+                h3{
+                    font-size: 12px;
+                }
+                img{
+                    width: 50px;
+                }
+            }
+            
+        }
+        .main_form_area{
+            padding: 15px;
+            h1{
+                font-size: 20px;
+                line-height: 30px;
+            }
+            p{
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
+            form{
+                .portion{
+                    
+                    .check{
+                        input[type="checkbox"] + label{
+                            font-size: 12px;
+                        }
+                    }
+                    a{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

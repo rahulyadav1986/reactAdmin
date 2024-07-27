@@ -1,0 +1,107 @@
+.keypad_popup_wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    .main_wrapper{
+        width: 315px;
+        border-radius: 8px;
+        background-color: var(--whiteColor);
+        padding: 10px 0 5px 0;
+        z-index: 9999;
+        position: relative;
+        .head_area{
+            width: 100%;
+            margin-bottom: 16px;
+            padding: 0 20px;
+            h4{
+                color: var(--textGrayColorV10);
+                font-family: var(--commonFont);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            img{
+                cursor: pointer;
+            }
+        }
+        .form_control_area_wrapper{
+            width: 100%;
+            background: #FFF5F5;
+            padding: 20px;
+            .portion{
+                width: 100%;
+                .form_control{
+                    width: 100%;
+                    height: 44px;
+                    background-color: var(--whiteColor);
+                    color: var(--textGrayColorV7);
+                    font-family: var(--commonFont);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    outline-style: none;
+                    border: rgb(208, 213, 221) 1px solid;
+                    border-radius: 8px;
+                    padding: 0 14px;
+                    position: relative;
+                }
+            }
+        }
+        .dialer_area_wrapper{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            text-align: center;
+            padding-top: 10px;
+            .dial_wrap{
+                margin-bottom: 24px;
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+                .no, .letter{
+                    font-family: var(--commonFont);
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                .no{
+                    color: var(--textGrayColorV10);
+                    font-size: 22px;
+                    
+                }
+                .letter{
+                    color: var(--subHeadingColorV2);
+                    font-size: 14px;
+                }
+            }
+            
+        }
+        .action_area_wrapper{
+            width: 100%;
+            padding: 0 0 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            text-align: center;
+            .dial_wrap{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .call_wrap{
+                width: 45px;
+                height: 45px;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                background-color: var(--primaryColor);
+            }
+        }
+    }
+}

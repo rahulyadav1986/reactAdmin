@@ -1,0 +1,117 @@
+.profile_card{
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #F4EAEA;
+    background-color: #FFF8F8;
+    padding: 20px;
+    margin-bottom: 12px;
+    &.height_adjust{
+        min-height: 424px;
+        margin-bottom: 0;
+    }
+    .profile_head{
+        width: 100%;
+        img{
+            width: 47px;
+            height: 47px;
+            border-radius: 100%;
+            margin-right: 15px;
+        }
+        .text_details{
+            h2, p{
+                color: var(--textGrayColorV10);
+                font-family: var(--commonFont);
+                font-style: normal;
+                line-height: normal; 
+                font-weight: 500;
+            }
+            p{
+                font-size: 14px;
+            }
+            h2{
+                font-size: 20px;
+                padding: 0;
+                text-transform: capitalize;
+                margin-bottom: 6px;
+            }
+        }
+    }
+    .contact_icons{
+        margin-top: 14px;
+        li{
+            margin-right: 12px;
+            cursor: pointer;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    .contact_list_wrapper{
+        width: 100%;
+        margin-top: 25px;
+        li{
+            margin-bottom: 16px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        .icon{
+            width: 25px;
+            height: 25px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 13px;
+            background-color: #F3E6E6;
+            
+        }
+        .text_area{
+            .label, .value{
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;                    
+                font-family: var(--commonFont);
+            }
+            .label{
+                color: var(--subHeadingColorV2);
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+            .value{
+                color: var(--textGrayColorV10);
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1500px){
+    .profile_card {
+        padding: 12px;
+        .profile_head {
+            img{
+                width: 40px;
+                height: 40px;
+                margin-right: 5px;
+            }
+            .text_details{
+                h2{
+                    font-size: 15px;
+                }
+                p{
+                    font-size: 12px;
+                }
+                
+            }
+        }
+        .contact_list_wrapper{
+            .text_area {
+                .value{
+                    font-size: 11px;
+                }
+            }
+            
+        }
+    }
+}

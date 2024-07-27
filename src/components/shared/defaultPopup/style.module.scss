@@ -1,0 +1,90 @@
+.default_popup_wrapper{
+    width: 475px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: var(--primaryColor);
+    position: fixed;
+    top: calc(64px + 20px);
+    right: 20px;
+    .cross{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        filter: brightness(0) invert(1);
+        opacity: .5;
+    }
+    .icon{
+        margin-right: 20px;
+    }
+    .content_area{
+        h2, p{
+            color: var(--whiteColor);
+            font-family: Inter;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 0.09px;
+        }
+        h2{
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+    .button_wrap{
+        margin-top: 15px;
+        button{
+            padding: 10px 12px;
+            border-radius: 6px;
+            
+            font-family: var(--commonColor);
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 0.075px;
+            cursor: pointer;
+            &.buttonOne{
+                background-color: #DBEAFE;
+                color: var(--primaryColor);
+                margin-right: 12px;
+            }
+            &.buttonTwo{
+                margin-right: 0;
+                background-color: var(--primaryColor);
+                color: var(--whiteColor);
+            }
+            img{
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .default_popup_wrapper{
+        width: 350px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 999;
+        padding-top: 30px;
+        .content_area{
+            h2{
+                font-size: 14px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+        .button_wrap{
+            button{
+                font-size: 12px;
+            }
+        }
+    }
+}

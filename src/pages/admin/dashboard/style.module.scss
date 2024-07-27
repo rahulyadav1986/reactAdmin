@@ -1,0 +1,15 @@
+.dahboard_wrapper{
+    width: 100%;
+    .dashboard_main_wrap{
+        max-width: 1092px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .dahboard_wrapper{
+        .dashboard_main_wrap{
+            max-width: calc(100% - 30px);
+        }
+    }
+}

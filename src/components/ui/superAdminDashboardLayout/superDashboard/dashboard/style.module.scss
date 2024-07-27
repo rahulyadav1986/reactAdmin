@@ -1,0 +1,89 @@
+.header{
+    color: var(--secondaryColor);
+    font-family: var(--headingFont);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0;
+    background-color: transparent;
+}
+
+.header_button_area_wrapper{
+    width: 100%;
+    padding: 21px 0;
+    border-top: rgba(0, 0, 0, 0.10) 1px solid;
+    border-bottom: rgba(0, 0, 0, 0.10) 1px solid;    
+    margin-top: 13px;
+    h2,h3{
+        color: var(--primaryColor);
+        text-align: center;
+        font-family: var(--headingFont);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%; /* 24px */
+        margin-bottom: 18px;
+    }
+    h3{
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--textGrayColorV10);
+    }
+    .button_wrapper{
+        .button{
+            width: 203px;
+            height: 36px;
+            border-radius: 4px;
+            border: 1px solid var(--secondaryColor);
+            background-color: var(--secondaryColor);
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+            color: var(--whiteColor);
+            font-family: var(--commonFont);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px; /* 142.857% */
+            cursor: pointer;
+            margin-right: 27px;
+            &:last-child{
+                margin-right: 0;
+            }
+            img{
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:767px){
+    .header_button_area_wrapper {
+        .button_wrapper {
+            .button{
+                width: auto;
+                padding: 0 20px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:500px){
+    .header_button_area_wrapper {
+        h2, h3{
+            font-size: 18px;
+            line-height: 24px;
+        }
+        h3{
+            font-size: 16px;
+        }
+        .button_wrapper {
+            flex-wrap: wrap;
+            .button{
+                margin-right: 0;
+                margin-bottom: 10px;
+                width: 100%;
+            }
+        }
+    }
+}

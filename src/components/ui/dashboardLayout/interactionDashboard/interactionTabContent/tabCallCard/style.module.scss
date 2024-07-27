@@ -1,0 +1,173 @@
+.call_card_wrap{
+    width: 100%;
+    background-color: #dee5f3;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    .card_header{
+        width: 100%;
+        height: 52px;
+        border-radius: 8px;
+        padding: 0 18px;
+        .call_icon{
+            margin-right: 12px;
+        }
+        .title, .sub_title{
+            color: var(--textGrayColorV10);
+            font-family: var(commonFont);
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        .title{            
+            font-size: 20px;
+        }
+        .sub_title{
+            font-size: 12px;
+        }
+        .recording{
+            margin-left: 15px;
+        }
+        .rec_text{
+            color: var(--textGrayColorV10);
+            text-align: right;
+            font-family: var(--commonFont);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-left: 8px;
+        }
+        .status_bound{
+            padding:1px 4px 2px;
+            border-radius: 2px;
+            background-color: var(--textGrayColorV10);
+            color: var(--White, #FFF);
+            font-family: var(--commonFont);
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        .time{
+            color: var(--textGrayColorV10);
+            font-family: var(--commonFont);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+    .call_option_card_wrapper{
+        width: 100%;
+        padding: 0 6px 6px 6px;
+        
+        .call_list{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            background-color: var(--whiteColor);
+            padding: 15px;
+            grid-gap: 24px;
+            li{
+                color: var(--textGrayColorV10);
+                font-family: var(commonFont);
+                text-align: center;
+                font-family: var(--commonFont);
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                cursor: pointer;
+                text-wrap: nowrap;
+                &.active{
+                    .button{
+                        background-color: var(--secondaryColorV2);
+                        img{
+                            filter: brightness(0) invert(1);
+                        }
+                    }
+                    
+                }
+                .button{
+                    width: 100%;
+                    height: 50px;
+                    margin-bottom: 11px;
+                    background-color: #F4F5F8;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1500px){
+    .call_card_wrap{
+        .call_option_card_wrapper{
+            .call_list{
+                grid-gap: 7px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1365px){
+    .call_card_wrap{
+        .card_header {
+            .title{
+                font-size: 15px;
+            }
+            .sub_title{
+                font-size: 10px;
+            }
+            .rec_text{
+                font-size: 10px;
+            }
+            .time{
+                font-size: 12px;
+            }
+            .status_bound{
+                font-size: 8px;
+            }
+        }
+        .call_option_card_wrapper{
+            .call_list{
+                grid-gap: 7px;
+                padding: 5px;
+                li{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .call_card_wrap{
+        flex: 0 0 49%;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .call_card_wrap{
+        flex: 0 0 100%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .call_card_wrap{
+        .card_header{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            flex-direction: column;
+            align-items: flex-start;
+            height: auto;
+            .status_bound{
+                margin-top: 10px;
+            }
+        }
+        .call_option_card_wrapper {
+            .call_list{
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+}

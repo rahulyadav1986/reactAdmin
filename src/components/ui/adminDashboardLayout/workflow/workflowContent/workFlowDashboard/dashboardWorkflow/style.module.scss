@@ -1,0 +1,22 @@
+.WorkFlowDashboard_wrapper{
+    width: 100%;
+    height: auto;
+    padding: 36px 102px;
+    
+    
+    
+}
+
+@media only screen and (max-width: 1500px){
+    .WorkFlowDashboard_wrapper{
+        padding: 36px;
+    }
+    
+}
+
+@media only screen and (max-width: 500px){
+    .WorkFlowDashboard_wrapper{
+        padding: 15px;
+    }
+    
+}

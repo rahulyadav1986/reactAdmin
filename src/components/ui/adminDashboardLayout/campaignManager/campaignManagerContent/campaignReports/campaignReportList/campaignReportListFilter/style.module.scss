@@ -1,0 +1,181 @@
+.campaign_report_list_wrapper{
+    width: 100%;
+    background-color: #F0F1F5;
+    padding: 12px 13px;
+    position: relative;
+    z-index: 9;
+
+    .filter_area{
+        width: 100%;
+        background-color: #F0F1F5;
+        padding: 12px 13px;
+        position: relative;
+        z-index: 9;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    
+        .filter_portion{
+            position: relative;
+            margin-right: 16px;
+            label{
+                color: var(--textGrayColorV8);
+                font-family: var(--headingFont);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px; /* 142.857% */
+                margin-bottom: 8px;
+                display: block;
+                span{
+                    color: var(--redColor);
+                }
+            }
+            .drop_down_area{
+                border-radius: 8px;
+                border: 1px solid var(--lightWhiteColor);
+                background-color: var(--whiteColor);
+                box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+                padding: 0 14px;
+                width: 260px;
+                height: 44px;
+                cursor: pointer;
+                &.highlighted{
+                    span{
+                        color: #101828;
+                    }
+                }
+                &.small{
+                    width: 160px;
+                }
+                &.date{
+                    width: 282px;
+                }
+                span{
+                    &.no{
+                        padding: 2px 4px;
+                        border-radius: 2px;
+                        background-color: #E4EDFF;
+                        color: var(--primaryColor);
+                        font-family: var(--headingFont);
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        margin-right: 8px;
+                    }
+                }
+                &.highlight{
+                    span{
+                        color: var(--textGrayColorV10);
+                    }
+                }
+                span{
+                    color: var(--subHeadingColorV2);
+                    font-family: var(--headingFont);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 24px; /* 150% */
+                }
+            }
+
+            .filter_pop_wrapper{
+                width: 100%;
+                position: absolute;
+                top: calc(100% + 4px);
+                left: 0;
+                width: 241px;
+                border-radius: 8px;
+                background-color: var(--whiteColor);
+                box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.05), 0px 12px 16px -4px rgba(16, 24, 40, 0.10);
+                z-index: 9;
+                li{
+                    color: var(--darkColorV2);
+                    font-family: var(--commonFont);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; /* 150% */
+                    padding: 10px 14px;
+                    cursor: pointer;
+                }
+            }
+            
+        }
+        .save_report_button{
+            width: 148px;
+            height: 36px;
+            border-radius: 8px;
+            border: 1px solid var(--whiteColor);
+            background-color: var(--whiteColor);
+            border-radius: 8px;
+            color: var(--primaryColor);
+            font-family: var(--commonFont);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px; /* 142.857% */
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width:1600px){
+    .filter_area {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 16px;
+        
+        .filter_portion {
+            width: 100%;
+            margin-right: 0;
+            .filter_pop_wrapper{
+                li{
+                    font-size: 13px;
+                    padding: 6px 10px;
+                }
+            }
+            .generate_button{
+                margin-left: 16px;
+            }
+            .drop_down_area{
+                width: 100%;
+                span{
+                    font-size: 14px;
+                }
+                
+            }
+
+            
+        }
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .filter_area{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media only screen and (max-width: 500px){
+    .filter_area{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .campaign_report_list_wrapper {
+        .filter_area {
+            flex-wrap: wrap;
+            // .save_report_button{
+            //     flex: 0 0 100%;
+            // }
+        }
+    }
+    
+}

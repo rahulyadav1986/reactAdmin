@@ -1,0 +1,83 @@
+.status_type_wrapper{
+    border-radius: 4px;
+    border: 1px solid #D7D7D7;
+    background-color: var(--whiteColor);
+    padding: 17px 28px;
+    .details{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    h2{
+        color: var(--textGrayColorV11);
+        font-family: var(--headingFont);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        margin-bottom: 19px;
+    }
+    .over_view_graph_wrapper{
+        width: 100%;
+        li{
+            border-radius: 4px;
+            background-color: #F8FAFB;
+            padding: 5px;
+            margin-bottom: 7px;
+            h4{
+                color: var(--subHeadingColor);
+                font-family: var(--commonFont);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin-bottom: 6px;
+            }
+            .tracker_details{
+                width: 100%;
+                display: flex;
+                gap: 1px;
+                li{
+                    flex: 1 0 auto;
+                    height: 4px;
+                    position: relative;
+                    padding: 0;
+                    background-color: transparent;
+                    &::after{
+                        position: absolute;
+                        bottom: -9px;
+                        left: 0;
+                        
+                        width: 9px;
+                        height: 9px;
+                        content: "";
+                    }
+                    &.passed{
+                        background-color: var(--greenColor);
+                        &::after{
+                            background-image: url(/assets/dashboard/main_dashboard/admin/interactionCenter/tableDetails/check_circle.png);
+                        }
+                    }
+                    &.failed{
+                        background-color: #F5AD58;
+                        &::after{
+                            background-image: url(/assets/dashboard/main_dashboard/admin/interactionCenter/tableDetails/dangerous.png);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .status_type_wrapper{
+        .details{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

@@ -1,0 +1,545 @@
+.call_details_tree{
+    width: 100%;
+    ul{
+        width: 100%;
+        li{
+            gap: 18px;
+            width: 100%;
+            
+            .call_card{
+                width: 133px;
+                flex: 0 0 133px;
+                height: 285px;
+                border-radius: 15px;
+                background-color: #f0f5fa;
+                p{
+                    color: var(--subHeadingColor);
+                    font-family: var(--commonFont);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%; 
+                }
+                .no{
+                    color: var(--primaryColor);
+                    font-family: var(--commonFont);
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%; 
+                }
+            }
+            .child_level_one{
+                width: 100%;
+                li{
+                    height: 139px;
+                    width: 100%;
+                    &.outbound{
+                        .child_level_two{
+                            li{
+                                height: 66px;
+                                width: 100%;
+                                .call_card{
+                                    height: 66px;
+                                }
+                            }
+                            .call_card{
+                                &.hasData{                               
+                                    &::after{
+                                        top: auto;
+                                        bottom: 20px;
+                                        margin: 0;
+                                    }
+                                }
+                            }
+
+                            .child_level_three{
+                                &::before{
+                                    height: 50px;
+                                }
+                                li{
+                                    margin-bottom: 8px;
+                                    height: 41px;
+                                    width: 100%;
+                                    .call_card{
+                                        height: 41px;
+                                    }
+                                    &:last-child{
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+                            
+                            
+                        }
+                        
+                        
+                    }  
+                    
+                }
+                .call_card{
+                    width: 102px;
+                    flex: 0 0 102px;
+                    height: 139px;
+                    border-radius: 15px;
+                    background-color: #f0f5fa;
+                    position: relative;
+                    &::before{
+                        width: 18px;
+                        height: 1px;
+                        background-color: #ACBEE2;
+                        position: absolute;
+                        top: 0;
+                        left: -18px;
+                        bottom: 0;
+                        margin: auto;
+                        content: "";
+                    } 
+                    p{
+                        color: var(--subHeadingColor);
+                        font-family: var(--commonFont);
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 150%; 
+                    }
+                    .no{
+                        color: var(--primaryColor);
+                        font-family: var(--commonFont);
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 150%; 
+                    }
+                    .status{
+                        color: var(--subHeadingColorV2);
+                        font-family: var(--headingFont);
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                }
+            }
+            .child_level_two{
+                width: 100%;
+                position: relative;
+                li{
+                    height: 41px; 
+                    width: 100%;
+                    position: unset; 
+                    
+                }
+                .call_card{
+                    width: 182px;
+                    flex: 0 0 182px;
+                    height: 41px;
+                    border-radius: 8px;
+                    padding: 0 0 0 9px;
+                    background-color: #f0f5fa;
+                    position: relative;
+                    &.hasData{
+                        &::after{
+                            width: 9px;
+                            height: 1px;
+                            background-color: #ACBEE2;
+                            position: absolute;
+                            top: 0;
+                            right: -9px;
+                            bottom: 0;
+                            margin: auto;
+                            content: "";
+                        }
+                    }
+                    &::before{
+                        width: 18px;
+                        height: 1px;
+                        background-color: #ACBEE2;
+                        position: absolute;
+                        top: 0;
+                        left: -18px;
+                        bottom: 0;
+                        margin: auto;
+                        content: "";
+                    }   
+                    p{
+                        color: var(--subHeadingColor);
+                        font-family: var(--commonFont);
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 150%; 
+                    }
+                    .no{
+                        color: var(--primaryColor);
+                        font-family: var(--headingFont);
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 150%; 
+                        margin-right: 7px;
+                    }
+                    .status{
+                        color: var(--subHeadingColorV2);
+                        font-family: var(--headingFont);
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                }
+            }
+            .child_level_three{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 201px;
+                &::before{
+                    width: 1px;
+                    height: 99px;
+                    background-color: #ACBEE2;
+                    position: absolute;
+                    top: 0;
+                    left: -10px;
+                    bottom: 0;
+                    margin: auto;
+                    content: "";
+                }
+                li{
+                    height: 41px;  
+                    margin-bottom: 8px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    
+                }
+                .call_card{
+                    width: 182px;
+                    flex: 0 0 182px;
+                    height: 41px;
+                    border-radius: 8px;
+                    padding: 0 0 0 9px;
+                    background-color: #f0f5fa;
+                    position: relative;
+                    &::before{
+                        width: 9px;
+                        height: 1px;
+                        background-color: #ACBEE2;
+                        position: absolute;
+                        top: 0;
+                        left: -9px;
+                        bottom: 0;
+                        margin: auto;
+                        content: "";
+                    } 
+                    p{
+                        color: var(--subHeadingColor);
+                        font-family: var(--commonFont);
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 150%; 
+                    }
+                    .no{
+                        color: var(--primaryColor);
+                        font-family: var(--headingFont);
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 150%; 
+                        margin-right: 7px;
+                    }
+                    .status{
+                        color: var(--subHeadingColorV2);
+                        font-family: var(--headingFont);
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1500px){
+    .call_details_tree{
+        ul{
+            li{
+                gap: 9px;
+                .call_card{
+                    width: 91px;
+                    flex: 0 0 91px;
+                    p{
+                        font-size: 14px;
+                    }
+                    .no{
+                        font-size: 28px;
+                    }
+                }
+                
+                .child_level_one{
+                    .call_card{
+                        width: 68px;
+                        flex: 0 0 68px;
+                        &::before{
+                            width: 9px;
+                            left: -9px;
+                        }
+                        p{
+                            font-size: 12px !important;
+                        }
+                    }
+                }
+                .child_level_two{
+                    .call_card{
+                        width: 150px;
+                        flex: 0 0 150px;
+                        p{
+                            font-size: 12px !important;
+                        }
+                    }
+                }
+                .child_level_three{
+                    left: 169px;
+                    .call_card{
+                        width: 130px;
+                        flex: 0 0 130px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px){
+    .call_details_tree{
+        ul{
+            li{
+                .call_card{
+                    width: 90px;
+                    flex: 0 0 90px;
+                    p{
+                        font-size: 13px;
+                    }
+                    .no{
+                        font-size: 25px;
+                    }
+                }
+                
+                .child_level_one{
+                    .call_card{
+                        width: 80px;
+                        flex: 0 0 80px;
+                        p{
+                            font-size: 11px !important;
+                        }
+                    }
+                }
+                .child_level_two{
+                    .call_card{
+                        width: 150px;
+                        flex: 0 0 150px;
+                        p{
+                            font-size: 11px !important;
+                        }
+                    }
+                }
+                .child_level_three{
+                    left: 169px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1250px){
+    .call_details_tree{
+        ul{
+            li{
+                .call_card{
+                    width: 150px;
+                    flex: 0 0 150px;
+                    p{
+                        font-size: 16px;
+                    }
+                    .no{
+                        font-size: 32px;
+                    }
+                }
+                
+                .child_level_one{
+                    .call_card{
+                        width: 150px;
+                        flex: 0 0 150px;
+                        p{
+                            font-size: 14px !important;
+                        }
+                    }
+                }
+                .child_level_two{
+                    .call_card{
+                        width: 180px;
+                        flex: 0 0 180px;
+                        p{
+                            font-size: 14px !important;
+                        }
+                    }
+                }
+                .child_level_three{
+                    left: 198px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 991px){
+    .call_details_tree{
+        ul{
+            li{
+                .call_card{
+                    width: 90px;
+                    flex: 0 0 90px;
+                    p{
+                        font-size: 13px;
+                    }
+                    .no{
+                        font-size: 25px;
+                    }
+                }
+                
+                .child_level_one{
+                    .call_card{
+                        width: 80px;
+                        flex: 0 0 80px;
+                        p{
+                            font-size: 11px !important;
+                        }
+                    }
+                }
+                .child_level_two{
+                    .call_card{
+                        width: 150px;
+                        flex: 0 0 150px;
+                        p{
+                            font-size: 11px !important;
+                        }
+                    }
+                }
+                .child_level_three{
+                    left: 169px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .call_details_tree{
+        ul{
+            li{
+                .call_card{
+                    width: 90px;
+                    flex: 0 0 90px;
+                    p{
+                        font-size: 13px;
+                    }
+                    .no{
+                        font-size: 25px;
+                    }
+                }
+                
+                .child_level_one{
+                    .call_card{
+                        width: 80px;
+                        flex: 0 0 80px;
+                        p{
+                            font-size: 11px !important;
+                        }
+                    }
+                }
+                .child_level_two{
+                    .call_card{
+                        width: 150px;
+                        flex: 0 0 150px;
+                        p{
+                            font-size: 11px !important;
+                        }
+                    }
+                }
+                .child_level_three{
+                    left: 169px;
+                }
+            }
+        }
+    }
+    .graph_area_wrap{
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .call_details_tree {
+        ul{
+            li{
+                display: block !important;
+                gap: 0;
+                .call_card{
+                    flex: 0 0 100%;
+                    width: 100%;
+                    height: 144px;
+                }
+                .child_level_one{
+                    display: block !important;
+                    margin-top: 8px;
+                    flex-wrap: wrap;
+                    li{
+                        flex: 0 0 100%;
+                        width: 100%;
+                        height: auto;
+                        margin-bottom: 8px;
+                        .call_card{
+                            flex: 0 0 100%;
+                            width: 100%;
+                            height: 95px;
+                            &::before{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .child_level_two{
+                    margin-top: 8px;
+                    li{
+                        .call_card{
+                            height: 60px;
+                        }
+                    }
+                    .call_card{
+                        &.hasData{
+                            &::after{
+                                display: none;
+                            }
+                        }
+                        
+                   }
+                   
+                }
+                .child_level_three{
+                    position: relative;
+                    left: 0;
+                    top: 0;
+                    margin-top: 8px;
+                    &::before{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

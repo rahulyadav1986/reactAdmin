@@ -1,0 +1,187 @@
+.work_flow_insight_header_area{
+    margin-bottom: 7px;
+    .bedcrumb{
+        display: flex;
+        align-items: center;
+        li{
+            color: var(--primaryColor);
+            font-family: var(--headingFont);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding-right: 22px;
+            margin-right: 10px;
+            position: relative;
+            &:last-child{
+                margin-right: 0;
+                padding-right: 0;
+                &::after{
+                    display: none;
+                }
+            }
+            &::after{
+                width: 15px;
+                height: 2px;
+                opacity: 0.4;
+                background-color: var(--textGrayColorV10);
+                transform: rotate(-40deg);
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                content: "";
+            }
+            &.main{
+                color: #058DDA;
+            }
+        }
+    }
+    .check_area{
+        margin-left: 15px;
+        border-radius: 4px;
+        background-color: rgba(5, 141, 218, 0.08);
+        padding: 5px 10px;
+        color: var(--Link-Color, #058DDA);
+        font-family: var(--headingFont);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.44px;
+        text-transform: uppercase;
+        li{                
+            padding: 5px 10px;
+            cursor: pointer;
+            &.active{
+                background-color: var(--whiteColor);
+                color: #00539F;
+            }
+        }
+    }
+    .flow_tab_area{
+        margin-left: 50px;
+        li{
+            color: var(--primaryColor);
+            font-family: var(--headingFont);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            cursor: pointer;
+            border-radius: 4px;
+            padding: 8px 15px;
+            &.active{
+                background-color: var(--primaryColor);
+                color: var(--whiteColor);
+            }
+        }
+    }
+    .time_wrap{
+        margin-left: 10px;
+        span{
+            color: var(--textGrayColorV10);
+            text-align: right;
+            font-family: var(--headingFont);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px; /* 142.857% */
+            opacity: 0.6;
+            margin-right: 6px;
+            
+        }
+        .button{
+            border-radius: 8px;
+            border: 1px solid var(--lightWhiteColor);
+            background-color: var(--whiteColor);
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+            padding: 10px 16px;
+            color: var(--textGrayColorV8);
+            font-family: var(--headingFont);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px; /* 142.857% */
+            cursor: pointer;
+            
+        }
+    }
+}
+
+
+@media only screen and (max-width:1500px){
+    .work_flow_insight_header_area{
+        flex-wrap: wrap;
+        .check_area{
+            li{
+                padding: 5px;
+                font-size: 12px;
+            }
+        }
+        .bedcrumb{
+            li{
+                font-size: 10px;
+            }
+        }
+        .left{
+            flex: 0 0 100%;
+            flex-wrap: wrap;
+            .flow_tab_area{
+                margin-left: 20px;
+                li{
+                    font-size: 12px;
+                }
+            }
+        }
+        .time_wrap{
+            .button{
+                font-size: 12px;
+            }
+        }
+    }
+
+    
+    
+}
+
+@media only screen and (max-width:600px){
+    .work_flow_insight_header_area{
+        flex-wrap: wrap;
+        .check_area{
+            margin-left: 0;
+            li{
+                padding: 3px;
+                font-size: 10px;
+            }
+        }
+        .bedcrumb{
+            margin-bottom: 15px;
+            li{
+                font-size: 10px;
+            }
+        }
+        .left{
+            flex: 0 0 100%;
+            flex-wrap: wrap;
+            .flow_tab_area{
+                margin-top: 15px;
+                margin-left: 0;
+                li{
+                    font-size: 12px;
+                }
+            }
+        }
+        .time_wrap{
+            .button{
+                font-size: 12px;
+            }
+        }
+    }
+
+    
+
+    
+    
+}

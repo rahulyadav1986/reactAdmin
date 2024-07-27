@@ -1,0 +1,30 @@
+.header{
+    width: 100%;
+    padding: 44px 93px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .menu_wrapper{
+        width: 100%;
+        li{
+            margin-right: 48px;
+            &:last-child{
+                margin-right: 0;
+            }
+            a{
+                color: var(--whiteColor);
+                font-family: var(--commonFont);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1100px){
+    .header{
+        padding: 44px 20px;
+    }
+}

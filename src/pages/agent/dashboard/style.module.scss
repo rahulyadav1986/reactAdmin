@@ -1,0 +1,78 @@
+.dashboard_wrapper{
+    width: 100%;
+    height: 100%;
+    padding: 42px 42px;
+    position: relative;
+    .top_card_wrapper{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 33px;
+        
+    }
+}
+
+.section_area_wrapper{
+    width: 100%;
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-gap: 40px;
+    .section{
+        width: 100%;
+        
+    }
+}
+
+
+.table_section_area_wrapper{
+    margin-top: 45px;
+}
+
+
+@media only screen and (max-width: 1600px){
+    .dashboard_wrapper{
+        padding: 24px 23px;
+        .top_card_wrapper{
+            grid-gap: 23px;
+        }
+        .section_area_wrapper{
+            margin-top: 24px;
+            gap: 24px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1250px){
+    .section_area_wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .dashboard_wrapper{
+        .top_card_wrapper{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .dashboard_wrapper{
+        padding: 15px;
+        .top_card_wrapper{
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 15px;
+        }
+        .section_area_wrapper{
+            margin-top: 15px;
+            grid-gap: 15px;
+        }
+        .table_section_area_wrapper{
+            margin-top: 20px;
+        }
+    }
+}
+
+

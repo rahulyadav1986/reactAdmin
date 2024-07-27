@@ -1,0 +1,309 @@
+.all_schedule_report_wrapper{
+    width: 100%;
+    padding: 20px;
+}
+
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    &.report_ticketTable{
+        tbody{
+            td{
+                text-transform:capitalize;
+                color: #25213B;
+                letter-spacing: normal;
+                // cursor: pointer;
+                &.campaignName{
+                    color: var(--primaryColor);
+                }
+                &.green{
+                    color: var(--greenColor);
+                    font-weight: 700;
+                }
+                .action_icons{
+                    li{
+                        margin-right: 12px;
+                        cursor: pointer;
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                    }
+                }
+                &.priority{
+                    &.high{
+                        color: var(--redColor);
+                    }
+                    &.midium{
+                        color: var(--yellowColor);
+                    }
+                    &.low{
+                        color: var(--greenColor);
+                    }
+                    
+                }
+                &.status{
+                    color: var(--primaryColor);
+                }
+            }
+        }
+
+        thead{
+            tr{
+                width: 100%;
+                border-bottom: #d5deec 1px solid;
+                th{
+                    &:first-child{
+                        width: 30px !important;
+                    }
+                }
+            }
+            th{
+                background-color: #f8fafb;
+                
+            }
+            .checkbox{
+                input[type="checkbox"] + label span{
+                    border-color: #8b83ba;
+                }
+            }
+            
+        }
+        tbody{
+            td{
+                background-color: var(--whiteColor);
+                color: var(--textGrayColorV10);
+                font-family: var(--commonFont);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                &.icon{
+                    img{
+                        margin-right: 5px;
+                    }
+                }
+                img{
+                    &.active{
+                        cursor: pointer;
+                    }
+                    
+                }
+                .no_of_whf{
+                    color: var(--greenColor);
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    img{
+                        margin-right: 5px;
+                    }
+                    span{
+                        background-color: var(--redColor);
+                        color: var(--whiteColor);
+                        border-radius: 2px;
+                        padding: 0 2px;
+                        margin-left: 3px;
+                    }
+                }
+                .action_icon_wrap{
+                    span{
+                        width: 48px;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 4px;
+                        border: 1px solid rgba(0, 0, 0, 0.10);
+                        background: var(--whiteColor);
+                        margin-right: 12px;
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                        img{
+                            cursor: pointer;
+                        }
+                    }
+                }
+                
+            }
+            tr{
+                border-bottom: #d5deec 1px solid;
+                
+                &:last-child{
+                    border-bottom: none;
+                }
+            }
+        }
+        td, th{
+            padding: 10px 10px;
+            background-color: #f8fafb;
+            color: #6E6893;
+            font-family: var(--headingFont);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 0.6px;
+            text-align: left;
+            width: auto !important;
+            &:first-child{
+                padding-left: 20px;
+            }
+            &:last-child{
+                padding-right: 20px;
+            }
+        }
+        td{
+            text-transform: normal;
+            img{
+                margin-left: 8px;
+            }
+        }
+        th{
+            text-transform: uppercase;
+        }
+    }
+    
+}
+
+.checkbox{
+    position: relative;
+    input[type="checkbox"]{
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        z-index: 9;
+    }
+    input[type="checkbox"] + label span{
+        width: 20px;
+        height: 20px;
+        border: var(--primaryColor) 2px solid;
+        border-radius: 3px;
+        display: block;
+        position: relative;
+        &::before{
+            width: 20px;
+            height: 20px;
+            background-image: url(../../../../../assets//dashboard//main_dashboard/check.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 70%;
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            margin: auto;
+            content: "";
+            filter: brightness(0) invert(1);
+            display: none;
+        }
+        
+    }
+    input[type="checkbox"]:checked + label span{
+        background-color: var(--primaryColor);
+        border-color: var(--primaryColor);
+        &::before{
+            display: block;
+        }
+
+        
+    }
+}
+
+.status_details{
+    border-radius: 4px;
+    background-color: var(--offWhiteColorV8);
+    padding: 5px 10px;
+    width: 155px;
+}
+.status_check_box{
+    position: relative;
+    input[type="checkbox"]{
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+    input[type="checkbox"] + label{
+        cursor: pointer;
+        width: 100%;
+    }
+    input[type="checkbox"] + label .check_toggle{
+        background-color: #e4e9ee;
+        width: 50px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 20px;
+        padding: 0 1px;
+    }
+    input[type="checkbox"] + label .check_toggle span{
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        img{
+            margin: 0;
+        }
+        &.hide{
+            background-color: var(--whiteColor);
+            box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.06), 0px 1px 2px 0px rgba(0, 0, 0, 0.10);
+        }
+        
+    }
+    input[type="checkbox"]:checked + label .check_toggle span{
+        &.hide{
+            background-color: transparent;
+            box-shadow: none;
+            img{
+                filter: brightness(0) invert(1);
+                
+            }
+        }
+        &.show{
+            background-color: var(--whiteColor);
+            box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.06), 0px 1px 2px 0px rgba(0, 0, 0, 0.10);
+        }
+    }
+    input[type="checkbox"]:checked + label .check_toggle{
+        background-color: var(--greenColor);
+    }
+
+    input[type="checkbox"] + label .check_text{
+        span{
+            color: var(--greenColor);
+            font-family: var(--headingFont);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 1.44px;
+            text-transform: uppercase;
+            &.show{
+                display: none;
+            }
+            &.hide{
+                display: block;
+            }
+        }
+    }
+    input[type="checkbox"]:checked  + label .check_text{
+        span{
+            &.show{
+                display: block;
+            }
+            &.hide{
+                display: none;
+            }
+        }
+    }
+    
+}

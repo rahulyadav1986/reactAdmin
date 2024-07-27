@@ -1,0 +1,22 @@
+.interactionDashboard_wrapper{
+    width: 100%;
+    padding: 15px 83px;
+    min-height: calc(100vh - 64px - 64px);
+    h1{
+        color: var(--primaryColor);
+        font-family: var(--headingFont);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 18px;
+        padding: 0;
+    }
+}
+
+
+@media only screen and (max-width:1500px){
+    .interactionDashboard_wrapper{
+        padding: 20px 20px;
+    }
+}

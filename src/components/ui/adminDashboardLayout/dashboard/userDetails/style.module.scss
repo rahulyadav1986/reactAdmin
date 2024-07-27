@@ -1,0 +1,60 @@
+.user_Details_wrapper{
+    width: 100%;
+    .main_wrap{
+        width: 777px;
+        
+        position: relative;
+        h4{
+            color: var(--secondaryColor);
+            font-family: var(--headingFont);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 15px;
+        }
+        h5, p{
+            color: var(--textGrayColorV10);
+            font-family: var(--headingFont);
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        h5{
+            font-size: 18px;
+        }
+        p{
+            font-size: 12px;
+            opacity: .7;
+        }
+    }
+}
+
+@media only screen and (max-width:1600px){
+    .user_Details_wrapper{
+        .main_wrap{
+            width: 711px
+        }
+    }
+    
+}
+
+@media only screen and (max-width:991px){
+    .user_Details_wrapper{
+        .main_wrap{
+            width: 600px
+        }
+    }
+    
+}
+
+@media only screen and (max-width:620px){
+    .user_Details_wrapper{
+        .main_wrap{
+            width: 350px
+        }
+    }
+    
+}
+
+

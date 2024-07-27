@@ -1,0 +1,36 @@
+.performance_details{
+    width: 100%;
+    display: flex;
+    grid-gap: 40px;
+    .portion{
+        h5{
+            color: var(--textGrayColorV11);
+            font-family: var(--headingFont);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+        .status{
+            height: 38px;
+            display: flex;
+            align-items: center;
+            color: var(--secondaryColor);
+            font-family: var(--commonFont);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%; /* 21px */
+            margin-bottom: 8px;
+            span{
+                font-size: 24px;
+                font-weight: 800;
+            }
+        }
+        
+    }
+}
+

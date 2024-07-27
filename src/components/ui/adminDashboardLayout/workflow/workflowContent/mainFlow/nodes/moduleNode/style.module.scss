@@ -1,0 +1,68 @@
+.node_area{
+    padding: 13px 20px 13px 13px;
+    height: 102px;
+    background-color: var(--whiteColor);
+    box-shadow: rgba(0,0,0,.05) 0 1px 20px;
+    border-radius: 8px;
+    position: relative;
+    .add_node{
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -16px;
+        margin: auto;
+        opacity: 1;
+    }
+    .settings_area{
+        margin-top: 14px;
+        span{
+            cursor: pointer;
+        }
+    }
+    span{
+        opacity: 1 !important;
+    }
+    &.general{
+       
+       .button{
+         min-width: 145px;
+         background: linear-gradient(180deg, #1EA2A2 0%, #1B9292 100%);
+       } 
+    }
+    
+    .button{
+        width: auto;
+        height: 40px;
+        border-radius: 6px;
+        background: linear-gradient(180deg, #00539F 0%, #BB1865 100%);
+        cursor: pointer;
+        
+        cursor: pointer;
+        padding: 8px;
+        margin-bottom: 7px;
+        text-transform: uppercase;
+        img{
+            margin-right: 6px;
+        }
+        span{
+            color: var(--whiteColor);
+            font-family: var(--headingFont);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            opacity: 1;
+        }
+    }
+    span{
+        color: var(--textGrayColorV10);
+        font-family: var(--headingFont);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        opacity: .6;
+    }
+}

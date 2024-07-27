@@ -1,0 +1,11 @@
+.campaigns_dashboard_wrapper{
+    width: 100%;
+    padding: 0 13px;
+}
+
+@media only screen and (max-width:750px){
+    .campaigns_dashboard_wrapper{
+        width: 100%;
+        padding: 0 5px;
+    }
+}

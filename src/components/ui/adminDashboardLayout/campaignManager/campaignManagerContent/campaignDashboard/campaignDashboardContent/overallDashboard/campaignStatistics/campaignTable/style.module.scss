@@ -1,0 +1,51 @@
+.campaign_table_wrapper{
+    width: 100%;
+    table{
+        width: 100%;
+        max-width: 100%;
+        border-collapse: collapse;
+        border-radius: 6px;
+        border: var(--offWhiteColorV15);
+        background: var(--whiteColor);
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.06), 0px 1px 2px 0px rgba(0, 0, 0, 0.10);
+        thead{
+            th{
+                background-color: #F9FAFB;
+                border-bottom: var(--offWhiteColorV15);
+                padding: 12px 20px;
+                color: var(--darkColorV10);
+                font-family: var(--headingFont);
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 16px; /* 133.333% */
+                letter-spacing: 0.06px;
+            }
+        }
+        tbody{
+            td{
+                background-color: var(--whiteColor);
+                border-bottom: var(--offWhiteColorV15);
+                padding: 12px 20px;
+                color: var(--darkColorV9);
+                font-family: var(--headingFont);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px; /* 142.857% */
+                letter-spacing: 0.07px;
+                text-transform: capitalize;
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .campaign_table_wrapper{
+        overflow: auto;
+        table{
+            width: 600px;
+        }
+    }
+}

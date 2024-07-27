@@ -1,0 +1,171 @@
+
+
+.common_popup_wrapper{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    
+}
+.pop_audio_call_wrapper{
+    border-radius: 4px;
+    background: var(--whiteColor);
+    padding: 10px;
+    width: 562px;
+    position: relative;
+    z-index: 9999;
+    &.supervisorAudioPOp{
+        width: 738px;
+        padding: 10px 24px 24px 24px;
+    }
+    
+}
+.pop_email_wrapper{
+    border-radius: 4px;
+    background: var(--whiteColor);
+    padding: 0 24px 10px 24px;
+    width: 766px;
+    max-height: 810px;
+    overflow: auto;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+    position: relative;
+    z-index: 9999;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+.video_call_wrapper{
+    border-radius: 4px;
+    background: var(--whiteColor);
+    padding: 0 24px 10px 24px;
+    width: 904px;
+    overflow: auto;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+    position: relative;
+    z-index: 9999;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+
+
+.pop_video_call_wrapper{
+    border-radius: 4px;
+    background: var(--whiteColor);
+    padding: 0 24px 10px 24px;
+    width: 720px;
+    position: relative;
+    z-index: 9999;
+    
+}
+
+.pop_supervisor_audio_call_wrapper{
+    border-radius: 8px;
+    background: var(--whiteColor);
+    width: 240px;
+    position: relative;
+    z-index: 9999;
+    box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.05), 0px 12px 16px -4px rgba(16, 24, 40, 0.10);
+    padding: 3px 3px 0 3px;
+}
+
+.pop_supervisor_chat_wrapper{
+    border-radius: 8px;
+    background: var(--whiteColor);
+    width: 662px;
+    position: relative;
+    z-index: 9999;
+    box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.05), 0px 12px 16px -4px rgba(16, 24, 40, 0.10);
+    padding: 12px;
+}
+
+.wfh_wrapper{
+    border-radius: 4px;
+    background: var(--whiteColor);
+    padding: 0 24px 10px 24px;
+    width: 693px;
+    position: relative;
+    box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.05), 0px 12px 16px -4px rgba(16, 24, 40, 0.10);
+    z-index: 9999;
+}
+
+.violation_wrapper{
+    border-radius: 4px;
+    background: var(--whiteColor);
+    padding: 0;
+    width: 923px;
+    position: relative;
+    box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.05), 0px 12px 16px -4px rgba(16, 24, 40, 0.10);
+    z-index: 9999;
+}
+
+.quality_form_wrapper{
+    border-radius: 4px;
+    background-color: var(--whiteColor);
+    padding: 0;
+    width: calc(100% - 20px);
+    max-width: 1431px;
+    height: auto;
+    max-height: 905px;
+    position: relative;
+    box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.05), 0px 12px 16px -4px rgba(16, 24, 40, 0.10);
+    z-index: 9999;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .pop_audio_call_wrapper{
+        width: 340px;
+    }
+    .pop_email_wrapper{
+        width: 350px;
+        height: 80%;
+        bottom: auto;
+        
+    }
+    .pop_video_call_wrapper{
+        width: 350px;
+    }
+    .video_call_wrapper{
+        width: 350px;
+    }
+    
+    .live{
+        width: 73px;
+        font-size: 12px;
+        display: block;
+        &:before{
+            width: 5px;
+            height: 5px;
+        }
+    }
+
+    .pop_supervisor_chat_wrapper{
+        width: 350px;
+    }
+    .wfh_wrapper{
+        width: 350px;
+    }
+    .violation_wrapper{
+        width: 350px;
+    }
+}
+
+
+
+

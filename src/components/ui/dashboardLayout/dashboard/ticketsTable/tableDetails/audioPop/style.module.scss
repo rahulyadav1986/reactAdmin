@@ -1,0 +1,33 @@
+.header_widget_area{
+    width: 100%;
+    margin-bottom: 16px;
+    &.border{
+        border-bottom: rgba(0,0,0,.1) 1px solid;
+        padding-bottom: 12px;
+    }
+    .action_icons{
+        li{
+            margin-right: 16px;
+            &:last-child{
+                margin-right: 0;
+            }
+            img{
+                cursor: pointer;
+            }
+        }
+    }
+    h4{
+        color: var(--textGrayColorV10);
+        font-family: var(--commonFont);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        span{
+            font-weight: 400;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+	<title>end-svg</title>
+	<style>
+		.s0 { fill: none;stroke: #ffffff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2 } 
+	</style>
+	<g id="Align/right">
+		<path id="Vector" fill-rule="evenodd" class="s0" d="m8 12q1.6 2.2 3.7 3.9 0.2 0.1 0.4 0.1m0 0q0.2 0 0.4-0.1 2.1-1.7 3.7-3.9zm0 0v-12m-7.1 16h14"/>
+	</g>
+</svg>

@@ -1,0 +1,68 @@
+.callerTab_wrapper{
+    width: 100%;
+    border-bottom: rgba(0, 0, 0, 0.2) 1px solid;
+    padding-left: 18px;
+    li{
+        color: var(--textGrayColorV10);
+        font-family: var(--commonFont);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 8px 27px;
+        border: var(--whiteColor) 1px solid;        
+        border-bottom: none;
+        border-radius: 10px 10px 0px 0px;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        &::after{
+            width: 100%;
+            height: calc( 100% + 1px);
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: var(--whiteColor);
+            content: "";
+            z-index: -1;
+            border-radius: 10px 10px 0px 0px;
+            opacity: 0;
+        }
+        &.active{
+            border-color: rgba(0, 0, 0, 0.2);
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--primaryColor);
+            &::after{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1500px){
+    .callerTab_wrapper{
+        li{
+            padding: 8px 25px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1365px){
+    .callerTab_wrapper{
+        li{
+            padding: 8px 15px;
+            font-size: 12px;
+            &.active{
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .callerTab_wrapper{
+        overflow: auto;
+    }
+}
+

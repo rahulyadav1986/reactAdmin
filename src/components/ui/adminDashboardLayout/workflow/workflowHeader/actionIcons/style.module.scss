@@ -1,0 +1,22 @@
+.right{
+    li{
+        margin-right: 24px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    .share_wrap{
+        
+        img{
+            flex:0 0 26px;
+            width: 26px;
+            height: 26px;
+            border-radius: 100%;
+            margin-right: 8px;
+            cursor: pointer;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}

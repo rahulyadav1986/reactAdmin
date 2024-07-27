@@ -1,0 +1,39 @@
+.filter_button{
+    height: 38px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--lightWhiteColor) 1px solid;
+    color: var(--textGrayColorV8);
+    font-family: var(--commonFont);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 18px;
+    .filter_line_icon{
+        margin-right: 8px;
+    }
+    &.active{
+        background-color: #e6edf4;
+    }
+}
+
+@media only screen and (max-width:1600px){
+    .filter_button{
+        padding: 0 12px;
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width:750px){
+    .filter_button{
+        margin-left: 0;
+    }
+}

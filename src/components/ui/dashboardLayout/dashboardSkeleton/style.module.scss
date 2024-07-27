@@ -1,0 +1,11 @@
+.skeleton_wrapper{
+    width: 100%;
+    min-height: 100vh;
+    padding: calc(64px + 72px) 130px 0 calc( 71px + 130px);
+    background-color: var(--offWhiteColorV8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    
+}

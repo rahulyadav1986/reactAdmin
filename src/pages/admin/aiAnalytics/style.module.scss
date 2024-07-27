@@ -1,0 +1,20 @@
+.ai_analytics_wrapper{
+    width: 100%;
+    padding: 15px 50px;
+    h1{
+        color: var(--primaryColor);
+        font-family: var(--headingFont);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 18px;
+    }
+}
+
+
+@media only screen and (max-width:1500px){
+    .ai_analytics_wrapper{
+        padding: 20px 20px;
+    }
+}

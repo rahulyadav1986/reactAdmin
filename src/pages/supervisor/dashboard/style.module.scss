@@ -1,0 +1,148 @@
+.dashboard_wrapper{
+    width: 100%;
+    height: 100%;
+    padding: 42px 42px;
+    position: relative;
+    .top_card_wrapper{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0;
+        border-radius: 8px;
+        border: none;
+        background-color: var(--offWhiteColorV7);
+        padding: 1px 0 0 1px;
+    }
+    .team_overview_wrapper{
+        width: 100%;
+        h2{
+            color: var(--subHeadingColor);
+            font-family: var(--commonFont);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150%; 
+            margin-bottom: 13px;
+        }
+        .card_wrapper{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+        }
+        
+    }
+    .message_queue_wrapper{
+        flex: 0 0 60%;
+        width: 60%;
+        background-color: var(--whiteColor);
+        border-radius: 8px;
+        background-color: var(--offWhiteColorV7);
+        padding: 1px 1px 1px 1px;
+    }
+}
+
+.section_area_wrapper{
+    width: 100%;
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-gap: 40px;
+    .section{
+        width: 100%;
+        
+    }
+}
+
+
+.table_section_area_wrapper{
+    margin-top: 45px;
+}
+
+
+@media only screen and (max-width: 1600px){
+    .dashboard_wrapper{
+        padding: 24px 23px;
+        .top_card_wrapper{
+            grid-gap: 23px;
+        }
+        .section_area_wrapper{
+            margin-top: 24px;
+            gap: 24px;
+        }
+        .team_overview_wrapper{
+            .top_card_wrapper{
+                grid-gap: 0;
+            }
+        }
+        .message_queue_wrapper{
+            flex: 0 0 50%;
+            width: 50%;
+            
+        }
+    }
+}
+
+@media only screen and (max-width: 1250px){
+    .section_area_wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .dashboard_wrapper{
+        .top_card_wrapper{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .dashboard_wrapper{
+        .team_overview_wrapper {
+            .card_wrapper{
+                gap: 0;
+                flex-wrap: wrap;
+                .top_card_wrapper{
+                    flex: 0 0 100%;
+                    width: 100%;
+                }
+            }
+        }
+        .message_queue_wrapper{
+            flex: 0 0 100%;
+            width: 100%;
+            margin-top: 24px;
+        }
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .dashboard_wrapper{
+        padding: 15px;
+        .top_card_wrapper{
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 15px;
+        }
+        .section_area_wrapper{
+            margin-top: 15px;
+            grid-gap: 15px;
+        }
+        .table_section_area_wrapper{
+            margin-top: 20px;
+        }
+    }
+}
+
+
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}

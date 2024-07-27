@@ -1,0 +1,21 @@
+.node_edge_wrapper{
+    img{
+       display: block; 
+    }
+}
+.edgebutton {
+    width: 26px;
+    height: 26px;
+    background: var(--secondaryColor);
+    border: 2px solid #B2C1E7;
+    color: var(--whiteColor);
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+  }

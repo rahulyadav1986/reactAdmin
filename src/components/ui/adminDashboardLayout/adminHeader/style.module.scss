@@ -1,0 +1,107 @@
+.admin_header_wrapper{
+    width: 100%;
+    height: 64px;
+    padding: 0 24px;
+    background-color: var(--primaryColor);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    &.superAdminHeader{
+        background-color: var(--secondaryColor);
+        background: linear-gradient(to right,  rgba(187,24,101,1) 0%,rgba(136,64,145,1) 50%,rgba(187,24,101,1) 100%);
+    }
+    &.resellerAmin{
+        background-color: var(--primaryDrakSecondColor);
+    }
+    .left{
+        position: relative;
+        z-index: 9;
+        .logo{
+            margin-right: 27px;
+            span{
+                color: var(--whiteColor);
+                font-family: var(--headingFont);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin-left: 27px;
+            }
+        }
+        .toggle_menu_wrapper{
+            position: relative;
+            .toggle_menu_main{
+                height: 64px;
+            }
+            .active{
+                transform: rotate(180deg);
+            }
+            span{
+                color: var(--whiteColor);
+                font-family: var(--headingFont);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                cursor: pointer;
+            }
+            .label{
+                margin: 0 8px;
+            }
+        }
+    }
+    .right{
+        position: relative;
+        z-index: 9;
+        .icon_area{
+            margin-right: 50px;
+            li{
+                margin-right: 34px;
+                cursor: pointer;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .admin_header_wrapper{
+        padding: 0 10px;
+        .left{
+            .logo{
+                margin-right: 10px;
+                img{
+                    width: 35px;
+                }
+            }
+            .toggle_menu_wrapper{
+                span{
+                    font-size: 12px;
+                }
+            }
+        }
+        .right{
+            .icon_area{
+                margin-right: 3px;
+                li{
+                    margin-right: 10px;
+                    img{
+                        width: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+}

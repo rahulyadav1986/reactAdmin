@@ -1,0 +1,71 @@
+.open_ticket_card_wrapper{
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #DEF1F4;
+    background-color: #F8FEFF;
+    padding: 20px;
+    h2{
+        color: var(--primaryColor);
+        font-family: var(--commonFont);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.56px;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 12px;
+    }
+    .list{
+        
+        li{
+            color: var(--textGrayColorV10);
+            font-family: var(--commonFont);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25px; 
+            span{
+                color: #058DDA;
+            }
+        }
+    }
+    .view_ticket_button{
+        border-radius: 4px;
+        border: 1px solid var(--whiteColor);
+        background-color: var(--whiteColor);
+        width: 145px;
+        height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        color: var(--primaryColor);
+        font-family: var(--commonFont);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; 
+    }
+}
+
+@media only screen and (max-width: 1500px){
+    .open_ticket_card_wrapper {
+        padding: 12px;
+        h2{
+            font-size: 12px;
+        }
+        .list {
+            li{
+                font-size: 12px;
+                line-height: 20px;
+                margin-bottom: 5px;
+            }
+        }
+        .view_ticket_button{
+            font-size: 12px;
+            width: 100%;
+        }
+    }
+}

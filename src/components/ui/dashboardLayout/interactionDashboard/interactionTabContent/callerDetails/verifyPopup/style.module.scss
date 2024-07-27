@@ -1,0 +1,139 @@
+.verify_popup_wrap{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    .main_wrapper{
+        width: 528px;
+        padding: 10px 12px 0;
+        background-color: var(--whiteColor);
+        border-radius: 4px;
+        position: relative;
+        z-index: 9999;
+        .head{
+            width: 100%;
+            margin-bottom: 20px;
+            h2{
+                color: var(--textGrayColorV10);
+                font-family: var(--commonFont);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                padding: 0;
+            }
+            img{
+                cursor: pointer;
+            }
+        }
+        .content_list_wrapper{
+            width: 100%;
+            li{
+                padding: 15px 0;
+                border-bottom: rgba(147,147,148,.2) 1px solid;
+                .label{
+                    color: var(--primaryColor);
+                    font-family: var(--commonFont);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; 
+                    flex: 0 0 50%;
+                    &.green{
+                       color: var(--greenColor)
+                    }
+                    &.red{
+                      color:  var(--redColor)
+                    }
+                }
+                .right_side_wrap{
+                    flex: 0 0 50%;
+                    span{
+                        color: var(--textGrayColorV10);
+                        font-family: var(--commonFont);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px; 
+                        flex: 0 0 140px;
+                    }
+                    .action_icons{
+                        width: 93px;
+                        height: 32px;   
+                        border-radius: 100px;
+                        background-color: var(--offWhiteColorV8);
+                        button{
+                            margin-right: 15px;
+                            cursor: pointer;
+                            opacity: .4;
+                            &.active{
+                                opacity: 1;
+                                img{
+                                    filter: brightness(1) invert(0);
+                                }
+                            }
+                            img{
+                                filter: brightness(0) invert(0);
+                            }
+                            &:last-child{
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .action_button_area{
+            padding: 15px 0;
+            .button{
+                width: 133px;
+                height: 44px;
+                border-radius: 8px;
+                color: var(--primaryColor);
+                font-family: var(--commonFont);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px; 
+                border: var(--primaryColor) 1px solid;
+                cursor: pointer;
+                margin-right: 16px;
+                img{
+                    margin-right: 8px;
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+                &:first-child{
+                    width: 194px;
+                    color: var(--whiteColor);
+                    background-color: var(--primaryColor);
+                    
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:500px){
+    .verify_popup_wrap{
+        .main_wrapper{
+            width: 370px;
+            .content_list_wrapper{
+                li{
+                    flex-wrap: wrap;
+                    .label{
+                        flex: 0 0 100%;
+                        margin-bottom: 15px;
+                    }
+                    .right_side_wrap{
+                        flex: 0 0 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+}

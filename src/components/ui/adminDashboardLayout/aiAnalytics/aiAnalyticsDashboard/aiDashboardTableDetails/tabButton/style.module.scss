@@ -1,0 +1,55 @@
+.tab_button_area_wrap{
+    width: 100%;
+    border-bottom: var(--offWhiteColorV2) 1px solid;
+    li{
+        color: var(--textGrayColorV7);
+        font-family: var(--headingFont);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 142.857% */
+        cursor: pointer;
+        padding: 3px 8px 20px 8px;
+        cursor: pointer;
+        position: relative;
+        &::after{
+            width: 0%;
+            height: 2px;
+            background-color: var(--primaryColor);
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            opacity: 0;
+            transition: all .5s ease-in-out;
+        }
+        &.active{
+            color: var(--primaryColor);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #E1F5FF 100%);
+            &::after{
+                width: 100%;
+                opacity: 1;
+            }
+            
+        }
+    }
+}
+
+@media only screen and (max-width: 1500px){
+    .tab_button_area_wrap{
+        li{
+            font-size: 12px;
+        }
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .tab_button_area_wrap{
+        overflow: auto;
+        li{
+            font-size: 12px;
+        }
+    }
+}

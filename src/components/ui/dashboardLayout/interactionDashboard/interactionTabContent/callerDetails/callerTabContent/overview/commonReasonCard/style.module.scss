@@ -1,0 +1,73 @@
+.commonReasonCard{
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid var(--whiteColor);
+    background-color: var(--whiteColor);
+    padding: 20px 20px 10px 20px;
+    
+    h2{
+        color: var(--textGrayColorV10);
+        font-family: var(--headingFont);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    .email{
+        color: var(--subHeadingColor);
+        font-family: var(--headingFont);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; 
+        margin-bottom: 34px;
+        img{
+            margin-right: 8px;
+        }
+    }
+    .bottom_line{
+        h5{
+            color: var(--textGrayColorV10);
+            font-family: var(--headingFont);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            margin-bottom: 3px;
+        }
+        h6{
+            color: var(--secondaryColor);
+            font-family: var(--headingFont);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1500px){
+    .commonReasonCard {
+        padding: 12px;
+        h2{
+            font-size: 12px;
+        }
+
+        .bottom_line{
+            h5{
+                font-size: 10px;
+            }
+            h6{
+                
+                font-size: 12px;
+            }
+        }
+        
+        
+    }
+}

@@ -1,0 +1,178 @@
+.video_chat_wrapper{
+    width: 100%;
+    margin-top: 12px;
+    .video_cover{
+        flex: 0 0 50%;
+        height: 491px;
+        position: relative;
+    }
+    video{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    .video_join_pallet{
+        width: 87px;
+        height: auto;
+        position: absolute;
+        bottom: 26px;
+        right: 26px;
+        z-index: 9;
+        li{
+            margin-bottom: 19px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            .avatar_cover{
+                width: 100%;
+                position: relative;
+                .avatar{
+                    width: 100%;
+                    height: 83px;
+                    border-radius: 4.5px;
+                }
+                .mic{
+                    width: 21px;
+                    height: 21px;
+                    border-radius: 100%;
+                    background-color: var(--redColor);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    bottom: 8px;
+                    right: 8px;
+                    cursor: pointer;
+                }
+                .micOn{
+                    position: absolute;
+                    bottom: 8px;
+                    right: 8px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .control_pallet_wrap{
+        width: 349px;
+        height: 94px;
+        position: absolute;
+        bottom: 26px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 8px;
+        background-image: url(/assets/interactionCenter/chatManagement/control_pallet.png);
+        li{
+            margin-right: 20px;
+            cursor: pointer;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+
+    }
+
+    .volumn_icon_wrapper{
+        width: 36px;
+        height: 108px;
+        flex-shrink: 0;
+        border-radius: 3.75px;
+        background: rgba(0, 0, 0, 0.52);
+        backdrop-filter: blur(14.998612403869629px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 26px;
+        left: 26px;
+        .progress_wrapper{
+            width: 3px;
+            height: 65.244px;
+            background: rgba(196, 196, 196, 0.30);
+            border-radius: 23.248px;
+            display: flex;
+            position: relative;
+            .progress{
+                width: 3px;
+                border-radius: 23.248px;
+                background-color: #C4C4C4;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        .volumn{
+            cursor: pointer;
+            margin-top: 6px;
+            cursor: pointer;
+        }
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 1500px){
+    .video_chat_wrapper {
+        .control_pallet_wrap{
+            width: 320px;
+            li{
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .video_chat_wrapper{
+        .video_cover{
+            height: 326px;
+        }
+        .control_pallet_wrap{
+            width: 95%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: 58px;
+            img{
+                width: 28px;
+            }
+            .call{
+                width: 47px;
+            }
+        }
+        .volumn_icon_wrapper{
+            bottom: 97px;
+            right: 10px;
+            left: auto;
+        }
+        .video_join_pallet{
+            width: 100%;
+            bottom: auto;
+            top: 10px;
+            right: 0;
+            padding: 0 10px;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-gap: 10px;
+            li{
+                .avatar_cover{
+                    .mic{
+                        top: -8px;
+                        right: -8px;
+                        bottom: auto;
+                    }
+                    .avatar{
+                        height: 26px;
+                    }
+                }
+            }
+        }
+    }
+}

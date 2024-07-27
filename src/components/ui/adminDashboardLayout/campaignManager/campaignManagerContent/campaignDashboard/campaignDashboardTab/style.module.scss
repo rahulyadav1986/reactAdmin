@@ -1,0 +1,50 @@
+.tab_button_area{
+    width: 100%;
+    border-bottom: var(--offWhiteColorV2) 1px solid;
+    li{
+        color: var(--textGrayColorV7);
+        font-family: var(--headingFont);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        cursor: pointer;
+        padding: 20px 8px 20px 8px;
+        position: relative;
+        &::after{
+            width: 0%;
+            height: 2px;
+            background-color: var(--primaryColor);
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            opacity: 0;
+            transition: all 0.5s ease-in-out;
+        }
+        &.active{
+            color: var(--primaryColor);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #E1F5FF 100%);
+            font-weight: 700;
+            &::after{
+                width: 100%;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:500px){
+    .tab_button_area{
+        overflow: auto;
+        li{
+            flex: 0 0 50%;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

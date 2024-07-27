@@ -1,0 +1,68 @@
+.prompt_wrap{
+    width: 100%;
+    padding: 15px 130px 15px 0;
+    border-radius: 8px;
+    background-color: var(--whiteColor);
+    border-radius: 12px;
+    border: var(--primaryColor) 2px solid;
+    margin-top: 2px;
+    position: relative;
+    .form_control{
+        width: 100%;
+        border: none;
+        outline-style: none;
+        padding: 0 15px;
+        color: rgba(0,0,0,.8);
+        font-family: var(--commonFont);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        overflow: auto;
+        -ms-overflow-style: none; 
+        scrollbar-width: none;
+        resize: none;
+        &::-webkit-scrollbar {
+            display: none;
+        } 
+        &::placeholder{
+            color: rgba(0,0,0,.4);
+            font-family: var(--commonFont);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; 
+        }
+    }
+    .icon_wrap{
+        position: absolute;
+        top: 0;
+        right: 20px;
+        height: 100%;
+        button{
+            margin-right: 22px;
+            cursor: pointer;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .prompt_wrap{
+        padding: 15px 10px 15px 10px;
+        display: flex;
+        flex-direction: column;
+        .form_control{
+            order: 2;
+            padding: 10px 10px 10px 0;
+            min-height: 150px;
+        }
+        .icon_wrap{
+            position: relative;
+            order: 1;
+            right: 0;
+        }
+    }
+}

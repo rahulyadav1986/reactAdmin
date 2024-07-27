@@ -1,0 +1,174 @@
+.header_widget_area{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 10px 0;
+    background-color: var(--whiteColor);
+    margin-bottom: 15px;
+    &.violation{
+        padding: 10px 24px;
+        margin-bottom: 0;
+        background-color: transparent;
+        .left{
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        
+    }
+    .action_icons{
+        li{
+            margin-right: 16px;
+            &:last-child{
+                margin-right: 0;
+            }
+            img{
+                cursor: pointer;
+            }
+        }
+    }
+    h4{
+        color: var(--textGrayColorV10);
+        font-family: var(--commonFont);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+.details_wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr;
+    margin-bottom: 30px;
+    h3{
+        color: var(--darkColorV6);
+        font-family: var(--commonFont);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 4px;
+    }
+    p{
+        color: var(--darkColorV6);
+        font-family: var(--commonFont);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px; /* 157.143% */
+        strong{
+            font-weight: 600;
+        }
+    }
+    .profile_area{
+        width: 100%;
+        padding: 8px 0;
+        .name, .contact{
+            font-family: var(--commonFont);
+            font-style: normal;
+            line-height: normal;
+            text-transform: none;
+        }
+        .name{
+            color: var(--textGrayColorV10);
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        
+        .contact{
+            color: var(--offWhiteColorV9);
+            font-size: 13px;
+            font-weight: 400;
+            opacity: .8;
+        }
+        img{
+            width: 37px;
+            height: 37px;
+            border-radius: 100%;
+            margin-right: 12px;
+        }
+    }
+}
+
+.violation_area_wrapper{
+    width: 100%;
+    overflow: auto;
+    h3{
+        color: var(--darkColorV6);
+        font-family: var(--commonFont);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 8px;
+        
+    }
+    table{
+        width: 100%;
+        max-width: 100%;
+        border-collapse: collapse;
+        thead{
+            tr{
+                border-top: 1px solid var(--offWhiteColorV15);
+                border-bottom: 1px solid var(--offWhiteColorV15);
+                background-color: #F9FAFB;
+                th{
+                    text-align: left;
+                    color: var(--darkColorV10);
+                    font-family: var(--headingFont);
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 16px; /* 133.333% */
+                    letter-spacing: 0.06px;
+                    padding: 12px 8px;
+                }
+            }
+        }
+        tbody{
+            tr{
+                border-bottom: 1px solid var(--offWhiteColorV15);
+                td{
+                    color: var(--darkColorV9);
+                    font-family:var(--headingFont);
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 20px; /* 142.857% */
+                    letter-spacing: 0.07px;
+                    text-transform: capitalize;
+                    padding: 12px 8px;
+                    img{
+                        width: 100%;
+                        height: 61px;
+                        object-fit: cover;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.image_area{
+    width: 100%;
+    padding: 0 24px 24px;
+    img{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .details_wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .violation_area_wrapper{
+        table{
+            width: 500px;
+            max-width: 500px;
+        }
+    }
+}

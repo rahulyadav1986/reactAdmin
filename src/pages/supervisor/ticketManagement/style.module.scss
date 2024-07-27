@@ -1,0 +1,11 @@
+.ticket_management_wrapper{
+    width: 100%;
+    
+    
+}
+
+@media only screen and (max-width: 991px){
+    .ticket_management_wrapper{
+        flex-wrap: wrap;
+    }
+}
